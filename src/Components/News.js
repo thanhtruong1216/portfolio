@@ -1,19 +1,16 @@
 import React, { Component } from 'react';
+import { Link } from 'react-router-dom';
 import '../styles/News.css';
 
 class News extends Component {
   render() {
     return(
       <section className="news-container">
-        This is News
+        This is news
+        <Link to="/news">Show more</Link>
       </section>
     );
   }
 }
 export default News;
 
-{/*<article>
-          <img src="#" alt="story-image"/>
-          <h4 className="story-title">This is title of story</h4>
-          <p className="story-lead">This is chapeau of story</p>
-        </article>*/}
