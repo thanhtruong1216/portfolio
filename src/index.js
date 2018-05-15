@@ -3,8 +3,11 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
-import NewsDetail from './components/NewsDetail';
+import NewsPage from './components/NewsPage';
 import RecruitmentInfo from './components/RecruitmentInfo';
+import RecruitmentInfoPage from './components/RecruitmentInfoPage';
+import Introduction from './components/Introduction';
+import Contact from './components/Contact';
 import registerServiceWorker from './registerServiceWorker';
 import createHistory from 'history/createBrowserHistory';
 import reducers from './reducers';
@@ -27,8 +30,10 @@ ReactDOM.render(
     <ConnectedRouter history={history}>
       <div>
         <Route exact path="/" component={App} />
-        <Route path="/news" component={NewsDetail} />
-        <Route path="/recruitment" component={RecruitmentInfo} />
+        <Route path="/news" component={NewsPage} />
+        <Route path="/recruitment" component={RecruitmentInfoPage} />
+        <Route path="/introduction" component={Introduction}/>
+        <Route path="/contact" component={Contact}/>
       </div>
     </ConnectedRouter>
   </Provider>,

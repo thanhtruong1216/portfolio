@@ -1,10 +1,36 @@
-.navigation-container {
+.header-container {
   display: flex;
+  flex-grow: 0;
   justify-content: center;
   align-items: center;
   justify-content: space-between;
   width: 100%;
   height: 100px;
-  background-color: #A52A2A;
-  border: 1px solid;
+  border-bottom: 2px solid;
+}
+
+.logo-wrapper {
+  flex: 1;
+  text-align: left;
+  display: flex;
+  align-items: center;
+}
+
+.navigation-bar {
+  flex: 2;
+  text-align: left;
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+}
+
+.navigation-bar a {
+  display: block;
+  text-decoration: none;
+  padding: 15px 20px;
+}
+
+.navigation-bar a:hover {
+  background-color: green;
+  color: white;
 }

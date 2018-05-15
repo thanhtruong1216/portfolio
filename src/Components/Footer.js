@@ -4,7 +4,7 @@ import '../styles/Footer.css';
 class Footer extends Component {
   render() {
     return(
-      <section className="contact-info-container">
+      <section className="footer-container">
         This is Interdist contact imformation
       </section>
     );

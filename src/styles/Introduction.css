@@ -1,0 +1,10 @@
+.introduction-container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.introduction-content {
+  flex: 1;
+  height: 200px;
+}
