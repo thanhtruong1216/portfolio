@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
+import Navigation from './Navigation';
 import '../styles/Header.css';
 
 class Header extends Component {
@@ -9,13 +10,7 @@ class Header extends Component {
         <div className="logo-wrapper">
           <img src="#" alt="interdist-logo" />
         </div>
-        <nav className="navigation-bar">
-          <Link to="/">Home</Link>
-          <Link to="/news">News</Link>
-          <Link to="/introduction">Introduction</Link>
-          <Link to="/recruitment">Recruitment</Link>
-          <Link to="/contact">Contact</Link>
-        </nav>
+        <Navigation/>
       </section>
     );
   }

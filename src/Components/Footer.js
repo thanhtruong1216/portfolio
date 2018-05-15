@@ -5,7 +5,7 @@ class Footer extends Component {
   render() {
     return(
       <section className="footer-container">
-        This is Interdist contact imformation
+        I'm footer
       </section>
     );
   }
