@@ -7,6 +7,9 @@ import { createStore } from 'redux';
 import createHistory from 'history/createBrowserHistory';
 import reducers from './reducers';
 import { Provider } from 'react-redux';
+import { createStore, applyMiddleware } from 'redux';
+import { Route } from 'react-router-dom';
+import { ConnectedRouter, routerMiddleware } from 'react-router-redux';
 
 const store = createStore(
   reducers,
