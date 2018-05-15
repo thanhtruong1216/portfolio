@@ -8,6 +8,12 @@ import RecruitmentInfo from './components/RecruitmentInfo';
 import RecruitmentInfoPage from './components/RecruitmentInfoPage';
 import Introduction from './components/Introduction';
 import Contact from './components/Contact';
+import SoonerNews from './components/SoonerNews';
+import ProductInfo from './components/ProductInfo';
+import CareerTips from './components/CareerTips';
+import DownloadForm from './components/DownloadForm';
+import ApplyForm from './components/ApplyForm';
+
 import registerServiceWorker from './registerServiceWorker';
 import createHistory from 'history/createBrowserHistory';
 import reducers from './reducers';
@@ -33,7 +39,12 @@ ReactDOM.render(
         <Route path="/news" component={NewsPage} />
         <Route path="/recruitment" component={RecruitmentInfoPage} />
         <Route path="/introduction" component={Introduction}/>
-        <Route path="/contact" component={Contact}/>
+        <Route path="/contact" component={Contact} />
+        <Route path="/soonerNews" component={SoonerNews} />
+        <Route path="/productInfo" component={ProductInfo} />
+        <Route path="/careerTips" component={CareerTips} />
+        <Route path="/downloadForm" component={DownloadForm} />
+        <Route path="/applyForm" component={ApplyForm} />
       </div>
     </ConnectedRouter>
   </Provider>,
