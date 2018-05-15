@@ -1,9 +1,9 @@
 import React, { Component } from 'react';
-import Header from './Components/Header';
-import Carousel from './Components/Carousel';
-import News from './Components/News';
-import RecruitmentInfo from './Components/RecruitmentInfo';
-import Footer from './Components/Footer';
+import Header from './components/Header';
+import Carousel from './components/Carousel';
+import News from './components/News';
+import RecruitmentInfo from './components/RecruitmentInfo';
+import Footer from './components/Footer';
 import './App.css';
 
 class App extends Component {
