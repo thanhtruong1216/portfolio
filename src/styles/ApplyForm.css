@@ -8,11 +8,3 @@
   flex: 1;
 }
 
-.form-wrapper div:first-child {
-  display: flex;
-}
-
-.candidate-name-wrapper,
-.candidate-sex-wrapper {
-  flex: 1;
-}
