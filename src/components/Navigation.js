@@ -7,29 +7,29 @@ class Navigation extends Component {
     return(
       <ul className="navigation-bar-container">
         <li>
-          <Link to="/">Home</Link>
+          <Link to="/">Trang chủ</Link>
         </li>
         <li>
-          <span>News</span>
+          <span>Tin tức</span>
           <div className="news-dropdown-content">
-            <Link to="/soonerNews">News Update</Link>
-            <Link to="/productInfo">Product Imformation</Link>
-            <Link to="/careerTips">Career Tips</Link>
+            <Link to="/soonerNews">Tin mới</Link>
+            <Link to="/productInfo">Thông tin sản phẩm</Link>
+            <Link to="/careerTips">Cẩm nang nghề nghiệp</Link>
           </div>
         </li>
         <li>
-          <Link to="/introduction">Introduction</Link>
+          <Link to="/introduction">Giới thiệu</Link>
         </li>
         <li>
-          <span>Recruitment</span>
+          <span>Tuyển dụng</span>
           <div className="recruitment-dropdown-content">
-            <Link to="/recruitment">Recruitment Imformation</Link>
-            <Link to="/downloadForm">Download Form</Link>
-            <Link to="/applyForm">Apply Form</Link>
+            <Link to="/recruitment">Thông tin tuyển dụng</Link>
+            <Link to="/downloadForm">Download biểu mẫu</Link>
+            <Link to="/applyForm">Nộp đơn ứng tuyển</Link>
           </div>
         </li>
         <li>
-          <Link to="/contact">Contact</Link>
+          <Link to="/contact">Liên hệ</Link>
         </li>
       </ul>
     );
