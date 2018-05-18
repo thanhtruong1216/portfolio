@@ -1,18 +1,19 @@
 import React, { Component } from 'react';
-import { Link } from 'react-router-dom';
-import Navigation from './Navigation';
 import '../styles/Header.css';
+import logo from '../Images/logo.jpeg';
 
 class Header extends Component {
   render() {
     return(
-      <section className="header-container">
-        <div className="logo-wrapper">
-          <img src="#" alt="interdist-logo" />
+      <header class="header-container">
+        <img class="logo" src={logo} alt="udacity-logo" />
+        <div class="header-right-content">
+          <p class="name">thanh truong</p>
+          <p class="slogan">front-end developer</p>
         </div>
-        <Navigation/>
-      </section>
+      </header>
     );
   }
 }
+
 export default Header;

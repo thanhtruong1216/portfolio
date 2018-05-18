@@ -1,6 +1,6 @@
-export const LOAD_SINGLE_NEWS = 'LOAD_SINGLE_NEWS';
+export const LOAD_SINGLE_PROJECT = 'LOAD_SINGLE_PROJECT';
 
-export const fetchSingleNews = singleNews => ({
-  type: LOAD_SINGLE_NEWS,
-  singleNews
+export const fetchSingleProject = singleProject => ({
+  type: LOAD_SINGLE_PROJECT,
+  singleProject
 })

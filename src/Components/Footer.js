@@ -4,9 +4,9 @@ import '../styles/Footer.css';
 class Footer extends Component {
   render() {
     return(
-      <section className="footer-container">
-        I'm footer
-      </section>
+      <footer className="footer-container">
+        <a href="mailto: thanhtruong1216@gmail.com">Email me</a>
+      </footer>
     );
   }
 }

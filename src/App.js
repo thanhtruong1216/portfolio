@@ -1,9 +1,8 @@
 import React, { Component } from 'react';
 import Header from './components/Header';
-import Carousel from './components/Carousel';
-import News from './components/News';
-import RecruitmentInfo from './components/RecruitmentInfo';
 import Footer from './components/Footer';
+import ReactFeature from './components/ReactFeature';
+import { Link } from 'react-router-dom';
 import './App.css';
 
 class App extends Component {
@@ -11,9 +10,12 @@ class App extends Component {
     return (
       <div className="App">
         <Header />
-        <Carousel />
-        <News />
-        <RecruitmentInfo />
+        <main>
+          <h1>feature works</h1>
+          <Link to="/react">React</Link>
+          <Link to="/redux">Redux</Link>
+          <Link to="/react-native">React</Link>
+        </main>
         <Footer />
       </div>
     );

@@ -1,15 +1,15 @@
 import * as Actions from '../actions';
 
 const initialState = {
-  motherDay: {
-    name: 'Happy Mother day',
-    title: "Mother's day is important day..."
+  react: {
+    name: 'React',
+    title: "This is my app"
   }
 }
 
 const reducers = (state = initialState, action) => {
   switch(action.type) {
-    case Actions.LOAD_SINGLE_NEWS:
+    case Actions.LOAD_SINGLE_PROJECT:
       return {};
     default:
       return state;
