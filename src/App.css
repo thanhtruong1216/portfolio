@@ -2,6 +2,10 @@
   box-sizing: border-box;
 }
 
+body {
+  padding: 0 50px;
+}
+
 .App {
   display: flex;
   flex-direction: column;
