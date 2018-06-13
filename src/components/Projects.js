@@ -12,7 +12,7 @@ class Projects extends Component {
           {data.projects.map((project) => {
             return(
               <div className="project">
-                <Link key={project.id} to={`/${project.link}`} className="black-text">{project.name}</Link>
+                <Link key={project.id} to={`/projects/${project.link}`} className="black-text">{project.name}</Link>
                 <ul className="project-overview" style={project.styles}>
                   {project.skills.map((skill, key) => {
                     return (

@@ -1,15 +1,31 @@
 .footer-container {
   width: 100%;
-  height: 100px;
+  line-height: 30px;
   background: #19a0d8;
-  display: flex;
+  /* display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: flex-start;
   align-items: center;
   flex-grow: 0;
-  padding: 0 20px;
+  padding: 0 20px; */
+  padding: 0 50px;
 }
 
-.footer-container div {
+.footer-container div, .footer-container div a {
   color: white;
+}
+
+.flex-box {
+  display: flex;
+}
+
+.flex-box a, .flex-box span {
+  display: inline-block;
+  flex: 1;
+}
+
+.flex-box span:last-child,
+.flex-box a:last-child  {
+  display: flex;
+  justify-content: flex-end;
 }

@@ -29,11 +29,11 @@ ReactDOM.render(
     <ConnectedRouter history={history}>
       <div>
         <Route exact path="/" component={App} />
-        <Route path="/booktracking" component={BookTracking} />
-        <Route path="/readable" component={Readable} />
-        <Route path="/memorygame" component={MemoryGame} />
-        <Route path="/neighborhoodmap" component={Neighborhoodmap} />
-        <Route path="/mobileflashcard" component={MobileFlashCard} />
+        <Route path="/projects/booktracking" component={BookTracking} />
+        <Route path="/projects/readable" component={Readable} />
+        <Route path="/projects/memorygame" component={MemoryGame} />
+        <Route path="/projects/neighborhoodmap" component={Neighborhoodmap} />
+        <Route path="/projects/mobileflashcard" component={MobileFlashCard} />
       </div>
     </ConnectedRouter>
   </Provider>,

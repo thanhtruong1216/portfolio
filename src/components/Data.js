@@ -2,7 +2,7 @@ const width = '200px';
 const height = '200px';
 const margin = '20px';
 const data = {
-  skills: ['HTML', 'CSS', 'JAVASCRIPT', 'REACT'],
+  skills: ['HTML', 'CSS', 'Javascript', 'React', 'Redux', 'Ruby on rails', 'Angular', 'Ember'],
   projects: [
     {
       id: 1,
