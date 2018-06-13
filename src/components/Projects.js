@@ -1,25 +1,25 @@
 import React, { Component } from 'react';
 import '../styles/projects.css';
 import { Link } from 'react-router-dom';
-import projectList from './ProjectList';
+import data from './Data';
 
 class Projects extends Component {
   render() {
     return(
-      <section className="features-work-container">
-        <h1>my projects</h1>
+      <section className="projects-container">
+        <h1>MY PROJECTS</h1>
         <div className="projects-wrapper">
-          {projectList.map((project) => {
+          {data.projects.map((project) => {
             return(
               <div className="project">
-                <Link key={project.id} to={`/${project.link}`}>{project.name}</Link>
-                <div className="project-overview" style={project.styles}>
-                  {project.skills.map(skill => {
+                <Link key={project.id} to={`/${project.link}`} className="black-text">{project.name}</Link>
+                <ul className="project-overview" style={project.styles}>
+                  {project.skills.map((skill, key) => {
                     return (
-                      <span className="skill">{skill}</span>
+                      <li className="skill" key={key}>{skill}</li>
                     );
                   })}
-                </div>
+                </ul>
               </div>
             );
           })}

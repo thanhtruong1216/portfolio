@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
+import '../styles/Project.css';
 
 class Neighborhoodmap extends Component {
   render() {
@@ -18,8 +19,8 @@ class Neighborhoodmap extends Component {
             Besides that, I also have a knowledge about React and the relation between Javascipt with React.
           </p>
         </article>
-        <a href="https://reactmapofthanh.herokuapp.com/">See project on Heroku</a>
-        <a href="https://github.com/thanhtruong1216/react-map/">See project on Github</a>
+        <a className="see-project-link" href="https://reactmapofthanh.herokuapp.com/">See project on Heroku</a>
+        <a className="see-project-link" href="https://github.com/thanhtruong1216/react-map/">See project on Github</a>
       </section>
     );
   }

@@ -1,0 +1,12 @@
+
+.skills-container {
+  background-color: gray;
+  line-height: 50px;
+  background-color: rgba(255, 255, 255, 0.5);
+}
+
+.skill-wrapper {
+  display: flex;
+  justify-content: space-around;
+}
+

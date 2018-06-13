@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import '../styles/Project.css';
 
 class MobileFlashCard extends Component {
   render() {
@@ -17,7 +18,7 @@ class MobileFlashCard extends Component {
             and user input. By building this project, I gain an understanding of how to use React Native to build an iOS and Android application.
           </p>
         </article>
-        <a href="https://github.com/thanhtruong1216/thanhtruong-mobile-flashcard">See project on Github</a>
+        <a className="see-project-link" href="https://github.com/thanhtruong1216/thanhtruong-mobile-flashcard">See project on Github</a>
       </section>
     );
   }

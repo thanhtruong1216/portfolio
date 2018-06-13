@@ -1,18 +1,16 @@
 import React, { Component } from 'react';
 import '../styles/Header.css';
 import logo from '../Images/logo.jpeg';
+import mepic from '../Images/mepic.jpg';
 
 class Header extends Component {
   render() {
     return(
-      <header class="header-container">
-        <div className="image-container">
-          <img className="logo" src={logo} alt="udacity-logo" />
-        </div>
-        <div class="header-right-content">
-          <p class="name">thanh truong</p>
-          <p class="slogan">front-end developer</p>
-        </div>
+      <header className="header-container">
+          <img className="logo" src={mepic} alt="udacity-logo" />
+          <p className="name">truong thi ho thanh</p>
+          <p className="slogan">front-end developer</p>
+          <em>Ho Chi Minh City, Viet Nam</em>
       </header>
     );
   }

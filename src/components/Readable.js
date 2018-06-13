@@ -1,4 +1,6 @@
 import React, { Component } from 'react';
+import '../styles/Project.css';
+import '../styles/Project.css';
 
 class Readable extends Component {
   render() {
@@ -15,7 +17,7 @@ class Readable extends Component {
             By building this project, I gain an understanding of how Redux can function in a standard type of application.
           </p>
         </article>
-        <a href="https://github.com/thanhtruong1216/readable">See project on Github</a>
+        <a className="see-project-link" href="https://github.com/thanhtruong1216/readable">See project on Github</a>
       </section>
     );
   }

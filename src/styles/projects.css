@@ -1,0 +1,33 @@
+.projects .black-text {
+  color: black;
+}
+
+.projects-container {
+  background: lightgray;
+}
+
+.projects-wrapper {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.project {
+  background-color: rgba(255, 255, 255, 0.8);
+  padding: 10px;
+  text-align: center;
+  margin: 10px;
+  font-size: 10pt;
+}
+
+.project-overview {
+  display: grid;
+  padding: 10px 0;
+  color: white;
+}
+.skill {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+

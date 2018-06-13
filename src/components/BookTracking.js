@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import Header from './Header';
 import Footer from './Footer';
+import '../styles/Project.css';
 
 class BookTracking extends Component {
   render() {
@@ -15,7 +16,7 @@ class BookTracking extends Component {
           used to persist information as I interacted with the application.
           </p>
         </article>
-        <a href="https://github.com/thanhtruong1216/booksApp">See project on Github</a>
+        <a className="see-project-link" href="https://github.com/thanhtruong1216/booksApp">See project on Github</a>
       </section>
     );
   }
