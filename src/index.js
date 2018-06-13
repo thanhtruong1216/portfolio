@@ -15,6 +15,7 @@ import Readable from './components/Readable';
 import MobileFlashCard from './components/MobileFlashCard';
 import MemoryGame from './components/MemoryGame';
 import Neighborhoodmap from './components/Neighborhoodmap';
+import GoogleMap from './components/GoogleMap';
 
 const history = createHistory();
 const middleware = routerMiddleware(history);
@@ -34,6 +35,7 @@ ReactDOM.render(
         <Route path="/projects/memorygame" component={MemoryGame} />
         <Route path="/projects/neighborhoodmap" component={Neighborhoodmap} />
         <Route path="/projects/mobileflashcard" component={MobileFlashCard} />
+        <Route path="/overview/thanh-location" component={GoogleMap} />
       </div>
     </ConnectedRouter>
   </Provider>,
