@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import '../styles/Header.css';
-import mepic from '../Images/mepic.jpg';
+import mepic from '../images/mepic.jpg';
 
 class Header extends Component {
   render() {
