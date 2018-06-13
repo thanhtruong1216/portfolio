@@ -1,6 +1,4 @@
 import React, { Component } from 'react';
-import Header from './Header';
-import Footer from './Footer';
 import '../styles/Project.css';
 
 class BookTracking extends Component {
@@ -10,10 +8,10 @@ class BookTracking extends Component {
         <article>
           <h1>Project The book tracking app description</h1>
           <p>
-          In the MyReads project, I created a bookshelf app that allows me to select and categorize books you have read,
-          are currently reading, or want to read.
-          The project emphasizes using React to build the application and provides an API server and client library that I
-          used to persist information as I interacted with the application.
+            In the MyReads project, I created a bookshelf app that allows me to select and categorize books you have read,
+            are currently reading, or want to read.
+            The project emphasizes using React to build the application and provides an API server and client library that I
+            used to persist information as I interacted with the application.
           </p>
         </article>
         <a className="see-project-link" href="https://github.com/thanhtruong1216/booksApp">See project on Github</a>

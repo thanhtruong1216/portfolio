@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import '../styles/Project.css';
-import '../styles/Project.css';
 
 class Readable extends Component {
   render() {
