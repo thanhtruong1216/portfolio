@@ -6,7 +6,9 @@ class Header extends Component {
   render() {
     return(
       <header class="header-container">
-        <img class="logo" src={logo} alt="udacity-logo" />
+        <div className="image-container">
+          <img className="logo" src={logo} alt="udacity-logo" />
+        </div>
         <div class="header-right-content">
           <p class="name">thanh truong</p>
           <p class="slogan">front-end developer</p>

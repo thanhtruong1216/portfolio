@@ -5,7 +5,8 @@ class Footer extends Component {
   render() {
     return(
       <footer className="footer-container">
-        <a href="mailto: thanhtruong1216@gmail.com">Email me</a>
+        <div>Mobile: 0918858240</div>
+        <div>Email: thanhtruong1216@gmail.com</div>
       </footer>
     );
   }
