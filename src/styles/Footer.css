@@ -2,12 +2,8 @@
   width: 100%;
   line-height: 30px;
   background: #19a0d8;
-  /* display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-  align-items: center;
-  flex-grow: 0;
-  padding: 0 20px; */
+  display: flex;
+  justify-content: center;
   padding: 0 50px;
 }
 
@@ -28,4 +24,9 @@
 .flex-box a:last-child  {
   display: flex;
   justify-content: flex-end;
+}
+
+a .icon {
+  font-size: 20pt;
+  margin: 10px;
 }

@@ -2,10 +2,6 @@
   color: black;
 }
 
-.projects-container {
-  background: lightgray;
-}
-
 .projects-wrapper {
   display: flex;
   justify-content: center;
@@ -13,22 +9,38 @@
 }
 
 .project {
-  background-color: rgba(255, 255, 255, 0.8);
+  background: #19a0d8;
   padding: 10px;
   text-align: center;
   margin: 10px;
   font-size: 10pt;
+  width: 350px;
+  color: white;
+}
+
+.project h2 {
+  color: white;
+  font-size: 20pt;
 }
 
 .project-overview {
-  display: grid;
-  padding: 10px 0;
-  color: white;
+  display: flex;
+  flex-wrap: wrap;
+  height: 50px;
+  padding: 0;
+  margin: 0;
+  justify-content: center;
 }
 
 .skill {
   display: flex;
   justify-content: center;
   align-items: center;
+  padding: 0 10px;
+}
+
+.project-image {
+  width: 100%;
+  height: 250px;
 }
 
