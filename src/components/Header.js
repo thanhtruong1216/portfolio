@@ -8,11 +8,11 @@ class Header extends Component {
   render() {
     return(
       <header className="header-container">
-        <img className="logo" src={mepic} alt="udacity-logo" />
+        <img className="avatar" src={mepic} alt="udacity-logo" />
         <p className="name">truong thi ho thanh</p>
         <p className="slogan">front-end developer</p>
-        <Link to="overview/thanh-location">
-          <FontAwesome name="fas fa-map-marker" className="icon"/>See my location
+        <Link to="overview/thanh-location" className="white-text">
+          <FontAwesome name="fas fa-map-marker" className="icon white-icon"/>See my location
         </Link>
       </header>
     );
