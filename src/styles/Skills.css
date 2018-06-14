@@ -12,11 +12,13 @@
 .skill-wrapper {
   display: flex;
   justify-content: center;
-  max-width: 320px;
   padding: 0;
   margin: 0;
 }
 
-.skill-wrapper li {
-
+.skill {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0 40px;
 }

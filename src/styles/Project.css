@@ -3,6 +3,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  font-family: 'Roboto Slab';
 }
 
 .project-details-container h1 {
@@ -13,24 +14,16 @@
 }
 
 .project-details-container article {
-  max-width: 700pt;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
-.project-details-container article p {
-  padding: 0;
-  margin: 0;
+.project-descripton p {
+  padding: 0 50px;
   line-height: 35px;
-}
-
-.see-project-link {
-  padding: 10px 20px;
-  background: #19a0d8;
-  border-radius: 5px;
-  margin: 10px;
-}
-
-.see-project-link:hover {
-  color: white;
 }
 
 .project {
@@ -55,17 +48,26 @@
   margin: 0;
   justify-content: center;
   white-space: nowrap;
-}
-
-.skill {
-  display: flex;
-  justify-content: center;
+  justify-content: space-between;
+  list-style: none;
+  padding: 0;
+  margin: 0;
   align-items: center;
-  padding: 0 5px;
 }
 
 .project-image {
   width: 100%;
   height: 200px;
 }
+
+.project-descripton {
+  width: 100%;
+}
+
+.project-descripton ul {
+  display: block;
+  padding: 0 80px;
+}
+
+
 
