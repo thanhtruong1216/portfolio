@@ -3,10 +3,20 @@
   background-color: gray;
   line-height: 50px;
   background-color: rgba(255, 255, 255, 0.5);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .skill-wrapper {
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
+  max-width: 320px;
+  padding: 0;
+  margin: 0;
 }
 
+.skill-wrapper li {
+
+}
