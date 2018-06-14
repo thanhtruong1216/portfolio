@@ -42,7 +42,6 @@ const data = {
       link: 'neighborhoodmap',
       image: map,
       skills: ['React', 'FourSquare API', 'NPM', 'Git' ],
-      fullskills: ['React', 'FourSquare API', 'NPM', 'Git', 'aaaa' ]
     },
     {
       id: 2,
