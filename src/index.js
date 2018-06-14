@@ -16,6 +16,13 @@ import MobileFlashCard from './components/MobileFlashCard';
 import MemoryGame from './components/MemoryGame';
 import Neighborhoodmap from './components/Neighborhoodmap';
 import GoogleMap from './components/GoogleMap';
+import WebFont from 'webfontloader';
+
+WebFont.load({
+  google: {
+    families: ['Roboto Slab']
+  }
+});
 
 const history = createHistory();
 const middleware = routerMiddleware(history);
@@ -43,4 +50,5 @@ ReactDOM.render(
 );
 
 registerServiceWorker();
+
 
