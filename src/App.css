@@ -9,11 +9,6 @@
   width: 100%;
 }
 
-h1 {
-  font-size: 25pt;
-  text-align: center;
-}
-
 main {
   flex: 1;
   display: flex;
@@ -25,6 +20,48 @@ a {
   text-transform: capitalize;
   padding: 20px 0;
   color: black;
+}
+
+h1, h2 {
+  white-space: nowrap;
+}
+
+h1 {
+  font-size: 25pt;
+  width: 100%;
+  margin: 10px 0;
+  background-color: #19a0d8;
+  color: white;
+  padding: 10px 50px;
+}
+
+h2 {
+  color: white;
+  padding: 0;
+  margin: 0;
+}
+
+.flex-box {
+  display: flex;
+  padding: 0 50px;
+}
+
+.flex-box div {
+  flex: 1;
+}
+
+.flex-box div:last-child {
+  text-align: right;
+}
+
+@media screen and (max-width: 400px) {
+  .skill-wrapper li {
+    font-size: 10pt;
+  }
+
+  .flex-box {
+    padding: 0 10px;
+  }
 }
 
 

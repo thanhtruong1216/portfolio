@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import '../styles/Project.css';
+import data from './Data';
 
 class MemoryGame extends Component {
   render() {

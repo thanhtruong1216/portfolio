@@ -7,7 +7,7 @@ class Projects extends Component {
   render() {
     return(
       <section className="projects-container">
-        <h1>MY PROJECTS</h1>
+        <h1>Project</h1>
         <div className="projects-wrapper">
           {data.projects.map((project) => {
             return(

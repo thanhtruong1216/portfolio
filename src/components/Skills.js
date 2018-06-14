@@ -7,7 +7,7 @@ class Skills extends Component {
   render() {
     return(
       <div className="skills-container">
-        <h1>MY SKILLS</h1>
+        <h1>Skill</h1>
         <ul className="skill-wrapper">
           {data.skills.map((skill, key) => (
             <li key={key} className="skill">{skill}</li>
