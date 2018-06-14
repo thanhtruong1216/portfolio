@@ -8,7 +8,7 @@ class Education extends Component {
       <section className="education-container">
         <h1>Education</h1>
         <div>
-          <h2>School</h2>
+          <h3>School</h3>
           {data.education.school.map(school => {
             return (
               <div className="degree">
@@ -25,7 +25,7 @@ class Education extends Component {
           })}
         </div>
         <div>
-          <h2>Certificate</h2>
+          <h3>Certificate</h3>
           {data.education.certificate.map(school => {
             return (
               <div className="certificate">

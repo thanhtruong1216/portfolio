@@ -4,14 +4,14 @@ import readable from '../images/readable.png';
 import book from '../images/book.png';
 import expo from '../images/expoo.jpg';
 const data = {
-  skills: ['HTML', 'CSS', 'ES6', 'React', 'Redux', 'Angular'],
+  skills: ['HTML', 'CSS', 'ES6', 'React', 'Redux', 'Angular', 'Git'],
   education: {
     school: [
       {
         degree: 'Bachelor of Laws',
         school: 'Can Tho University',
         year: '2009 - 2013',
-        country: 'Viet Nam'
+        country: 'Can Tho City, Viet Nam'
       }
     ],
     certificate: [
@@ -42,6 +42,7 @@ const data = {
       link: 'neighborhoodmap',
       image: map,
       skills: ['React', 'FourSquare API', 'NPM', 'Git' ],
+      fullskills: ['React', 'FourSquare API', 'NPM', 'Git', 'aaaa' ]
     },
     {
       id: 2,

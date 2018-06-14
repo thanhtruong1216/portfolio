@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import '../styles/projects.css';
+import '../styles/Projects.css';
 import { Link } from 'react-router-dom';
 import data from './Data';
 
@@ -19,7 +19,7 @@ class Projects extends Component {
                 <ul className="project-overview" style={project.styles}>
                     {project.skills.map((skill, key) => {
                       return (
-                        <li className="skill" key={key}>{skill}</li>
+                        <li className="project-skill" key={key}>{skill}</li>
                       );
                     })}
                   </ul>
