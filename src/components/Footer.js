@@ -19,6 +19,9 @@ class Footer extends Component {
           <a href="https://github.com/thanhtruong1216">
             <FontAwesome name="fab fa-github-square" className="icon" />
           </a>
+          <a href="https://www.facebook.com/hthanh312">
+            <FontAwesome name="fab fa-facebook-square" className="icon" />
+          </a>
         </address>
       </footer>
     );
