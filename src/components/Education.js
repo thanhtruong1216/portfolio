@@ -31,6 +31,7 @@ class Education extends Component {
                   <div>{school.year}</div>
                 </div>
                 <div className="flex-box">
+                  <div><a href={school.link}>See certificate</a></div>
                   <div>{school.school}</div>
                 </div>
               </div>

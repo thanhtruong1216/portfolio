@@ -48,6 +48,10 @@ h2 {
   flex: 1;
 }
 
+.flex-box a {
+  color: #19a0d8;
+}
+
 .flex-box div:last-child {
   text-align: right;
 }
