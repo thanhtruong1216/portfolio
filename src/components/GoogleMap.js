@@ -2,11 +2,15 @@ import React, { Component } from 'react';
 import '../App.css';
 import styles from './StylesMap';
 import '../styles/Map.css';
+import locations from './Locations';
 
 class GoogleMap extends Component {
   constructor(props) {
     super(props);
     this.mapDom = React.createRef();
+    this.state = {
+      locations: locations
+    }
   }
 
   componentDidMount() {
@@ -23,20 +27,13 @@ class GoogleMap extends Component {
   initMap() {
     let mapConfigs = {
       center: { lat: 10.758334, lng: 106.672211 },
-      zoom: 13,
+      zoom: 8,
       styles: styles,
       mapTypeControl: false
     };
-    let defaultIcon = makeMarkerIcon('0091ff');
-    let highlightedIcon = makeMarkerIcon('FFFF24');
     let mapDom = document.getElementById('map');
+    this.bounds = new google.maps.LatLngBounds();
     this.map = new google.maps.Map(mapDom, mapConfigs);
-    let marker = new google.maps.Marker({
-      map: this.map,
-      position: { lat: 10.758334, lng: 106.672211 },
-      icon: defaultIcon,
-      animation: google.maps.Animation.DROP,
-    })
     function makeMarkerIcon(markerColor) {
       let markerImage = new google.maps.MarkerImage(
         'http://chart.googleapis.com/chart?chst=d_map_spin&chld=1.15|0|'+ markerColor +
@@ -47,12 +44,26 @@ class GoogleMap extends Component {
         new google.maps.Size(21,34));
       return markerImage;
     }
+    let defaultIcon = makeMarkerIcon('0091ff');
+    let highlightedIcon = makeMarkerIcon('FFFF24');
+    for(let i = 0; i < this.state.locations.length; i++) {
+      let location = this.state.locations[i]
+      let position = location.location;
+      let title = location.title;
+      let marker = new google.maps.Marker({
+        map: this.map,
+        position: position,
+        title: title,
+        icon: defaultIcon,
+        animation: google.maps.Animation.DROP,
+      })
     marker.addListener('mouseover', function() {
       this.setIcon(highlightedIcon);
     });
     marker.addListener('mouseout', function() {
       this.setIcon(defaultIcon);
     });
+  }
   }
 
   render() {
