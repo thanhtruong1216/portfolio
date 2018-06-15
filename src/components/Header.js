@@ -15,7 +15,7 @@ class Header extends Component {
           <p className="slogan">{data.introduction.job}</p>
           <p>{data.introduction.language}</p>
         </div>
-        <Link to="overview/thanh-location" className="white-text">
+        <Link to="/thanh-location" className="white-text">
           <FontAwesome name="fas fa-map-marker" className="icon white-icon"/>See where I lived and I worked
         </Link>
       </header>

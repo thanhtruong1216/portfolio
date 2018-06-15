@@ -1,12 +1,10 @@
 
 .skills-container {
-  background-color: gray;
-  line-height: 50px;
   background-color: rgba(255, 255, 255, 0.5);
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+}
+
+.full-skills-wrapper {
+  padding: 0 50px;
 }
 
 .skill-wrapper {
@@ -22,3 +20,49 @@
   align-items: center;
   padding: 0 40px;
 }
+
+.skill-container {
+  width: 100%;
+  background-color: #ddd;
+}
+
+.skill-name {
+  text-transform: uppercase;
+}
+
+.skills {
+  height: 40px;
+}
+
+.level-bar {
+  display: flex;
+  background: lightblue;
+
+}
+
+.level-bar div {
+  width: 25%;
+  border-right: 1px solid gray;
+  text-align: center;
+}
+
+#html {
+  width: 75%;
+  background-color: #4CAF50;
+}
+
+#css {
+  width: 67%;
+  background-color: #ffce2b;
+}
+
+#javascript {
+  width: 65%;
+  background-color: #c66c98;
+}
+
+#react {
+  width: 55%;
+  background-color: #f2933a;
+}
+

@@ -8,7 +8,7 @@ import mepic from '../images/mepic.jpg';
 const data = {
   introduction: {
     avatar: mepic,
-    name: 'truong tho ho thanh',
+    name: 'truong thi ho thanh',
     job: 'frontend developer',
     language: 'English, Vietnamese'
   },
@@ -25,7 +25,7 @@ const data = {
     },
     {
       id: 2,
-      title: 'I live here from 2016',
+      title: 'I live here currently',
       image: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQWdxwl7wcQZoboWYr-u4O_xKry6ajsSX_T0Fk6Esh6YCwhMCI5',
       address: 'Nguyen Huu Tho Street, District 7, Ho Chi Minh City',
       location: {
@@ -44,7 +44,24 @@ const data = {
         }
       },
   ],
-  skills: ['HTML', 'CSS', 'ES6', 'React', 'Redux', 'Angular', 'Git'],
+  skills: [
+    {
+      name: 'html',
+      percent: '90%',
+    },
+    {
+      name: 'css',
+      percent: '80%'
+    },
+    {
+      name: 'javascript',
+      percent: '65%'
+    },
+    {
+      name: 'react',
+      percent: '65%'
+    },
+  ],
   education: {
     school: [
       {

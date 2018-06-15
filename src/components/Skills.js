@@ -8,11 +8,22 @@ class Skills extends Component {
     return(
       <div className="skills-container">
         <h1>Skill</h1>
-        <ul className="skill-wrapper">
-          {data.skills.map((skill, key) => (
-            <li key={key} className="skill">{skill}</li>
+        <div className="full-skills-wrapper">
+          {data.skills.map(skill => (
+            <div>
+              <p className="skill-name">{skill.name}</p>
+              <div class="skill-container">
+                <div class="skills" id={skill.name}></div>
+                <div className="level-bar">
+                  <div>Beginner</div>
+                  <div>Intermediate</div>
+                  <div>Advanced</div>
+                  <div>Expert</div>
+                </div>
+              </div>
+            </div>
           ))}
-        </ul>
+        </div>
       </div>
     );
   }

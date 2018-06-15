@@ -42,7 +42,7 @@ ReactDOM.render(
         <Route path="/projects/memorygame" component={MemoryGame} />
         <Route path="/projects/neighborhoodmap" component={Neighborhoodmap} />
         <Route path="/projects/mobileflashcard" component={MobileFlashCard} />
-        <Route path="/overview/thanh-location" component={GoogleMap} />
+        <Route path="/thanh-location" component={GoogleMap} />
       </div>
     </ConnectedRouter>
   </Provider>,
