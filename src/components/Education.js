@@ -9,9 +9,9 @@ class Education extends Component {
         <h1>Education</h1>
         <div>
           <h3>School</h3>
-          {data.education.school.map(school => {
+          {data.education.school.map((school,key) => {
             return (
-              <div className="degree">
+              <div className="degree" key={key}>
                 <div className="flex-box">
                   <div>{school.degree}</div>
                   <div>{school.year}</div>
@@ -26,9 +26,9 @@ class Education extends Component {
         </div>
         <div>
           <h3>Certificate</h3>
-          {data.education.certificate.map(school => {
+          {data.education.certificate.map((school,key) => {
             return (
-              <div className="certificate">
+              <div className="certificate" key={key}>
                 <div className="flex-box">
                   <div>{school.certificate}</div>
                   <div>{school.year}</div>
