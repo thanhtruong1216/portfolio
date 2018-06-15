@@ -3,7 +3,15 @@ import map from '../images/map.png';
 import readable from '../images/readable.png';
 import book from '../images/book.png';
 import expo from '../images/expoo.jpg';
+import mepic from '../images/mepic.jpg';
+
 const data = {
+  introduction: {
+    avatar: mepic,
+    name: 'truong tho ho thanh',
+    job: 'frontend developer',
+    language: 'English, Vietnamese'
+  },
   locations: [
     {
       id: 1,
@@ -51,16 +59,19 @@ const data = {
         certificate: 'Intro to Programing Nanodegree',
         school: 'Udacity',
         year: 2016,
+        link: 'https://confirm.udacity.com/GRPLLPHP'
       },
       {
         certificate: 'React Nanodegree Program',
         school: 'Udacity',
         year: 2017,
+        link: 'https://confirm.udacity.com/VHV7ADUC'
       },
       {
         certificate: 'Front-End Web Developer Nanodegree',
         school: 'Udacity',
         year: 2018,
+        link: 'https://confirm.udacity.com/SGVCLHPC'
       }
     ]
   },
@@ -125,6 +136,28 @@ const data = {
         goal: 'This content and comment structure is common across a large number of websites and applications, from news sites to blogs to aggregators like Hacker News and Reddit. By building this project, I gain an understanding of how Redux can function in a standard type of application.'
       }
     }
+  ],
+  contact: [
+    {
+      link: 'tel:+84918858240',
+      icon: 'fas fa-phone-square'
+    },
+    {
+      link: 'mailto:thanhtruong1216@gmail.com',
+      icon: 'fas fa-envelope-square'
+    },
+    {
+      link: 'https://www.linkedin.com/in/thanhtruong0312/',
+      icon: 'fab fa-linkedin'
+    },
+    {
+      link: 'https://github.com/thanhtruong1216',
+      icon: 'fab fa-github-square'
+    },
+    {
+      link: 'https://www.facebook.com/hthanh312',
+      icon: 'fab fa-facebook-square'
+    },
   ]
 }
 
