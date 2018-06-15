@@ -44,7 +44,7 @@ const data = {
       skills: ['React', 'FourSquare API', 'NPM', 'Git' ],
       description: {
         overview: 'Project prerequisite: I need to know about Google map with Javascript before to build React map application. Besides that, I also have a knowledge about React and the relation between Javascipt with React.',
-        technical: ['React', 'FourSquare API', 'NPM', 'Git' ],
+        technical: ['React', 'FourSquare API', 'NPM', 'Git', 'Babel', 'Webpack' ],
         goal: 'Develop a single page application featuring a map of my neighborhood I would like to visit. Add functionality to the map, including highlighted locations, provide a filter option that uses an input field to filter both the list view and the map markers displayed by default on load, using FourSquare APIs to provide information when a map marker or list view entry is clicked.'
       }
     },
@@ -56,7 +56,7 @@ const data = {
       skills: ['HTML', 'CSS', 'Javascript'],
       description: {
         overview: 'The Memory Game Project is all about demonstrating your mastery of HTML, CSS, and JavaScript.I built a complete browser-based card matching game (also known as Concentration).But this isn’t just any memory game! It’s a shnazzy, well-designed, feature-packed memory game!',
-        technical: ['HTML', 'CSS', 'Javascript'],
+        technical: ['HTML', 'CSS', 'Javascript ES6'],
         goal: 'The game board consists of sixteen "cards" arranged in a grid. The deck is made up of eight different pairs of cards, each with different symbols on one side. The cards are arranged randomly on the grid with the symbol face down. The gameplay rules are very simple: flip over two hidden cards at a time to locate the ones that match!'
       }
     },
@@ -68,7 +68,7 @@ const data = {
       skills: ['React', 'ES6', 'Fetch API', 'Babel' ],
       description: {
         overview: 'In this project, I created a bookshelf app that allows me to select and categorize books you have read, are currently reading, or want to read.',
-        technical: ['React', 'ES6', 'Fetch API', 'Babel' ],
+        technical: ['React', 'Javascript ES6', 'Fetch API', 'Babel', 'Git', 'Webpack' ],
         goal: 'The project emphasizes using React to build the application and provides an API server and client library that I used to persist information as I interacted with the application.'
       }
     },
@@ -92,7 +92,7 @@ const data = {
       skills: ['Redux','Fetch API', 'Babel', 'Webpack'],
       description: {
         overview: "For the Readable project, I built a content and comment web app. Users will be able to post content to predefined categories, comment on their posts and other users' posts, and vote on posts and comments. Users will also be able to edit and delete posts and comments.",
-        technical: ['Redux','Fetch API', 'Babel', 'Webpack'],
+        technical: ['Redux','Fetch API', 'Babel', 'Webpack', 'Git', 'Javascript ES6'],
         goal: 'This content and comment structure is common across a large number of websites and applications, from news sites to blogs to aggregators like Hacker News and Reddit. By building this project, I gain an understanding of how Redux can function in a standard type of application.'
       }
     }
