@@ -4,6 +4,38 @@ import readable from '../images/readable.png';
 import book from '../images/book.png';
 import expo from '../images/expoo.jpg';
 const data = {
+  locations: [
+    {
+      id: 1,
+      title: 'I studied here for four years(2009-2013)',
+      image: 'https://static.panoramio.com.storage.googleapis.com/photos/large/42881250.jpg',
+      address: '3/2 Street, Ninh Kieu District, Can Tho City',
+      location: {
+        lat: 10.030999,
+        lng: 105.768790
+      }
+    },
+    {
+      id: 2,
+      title: 'I live here from 2016',
+      image: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQWdxwl7wcQZoboWYr-u4O_xKry6ajsSX_T0Fk6Esh6YCwhMCI5',
+      address: 'Nguyen Huu Tho Street, District 7, Ho Chi Minh City',
+      location: {
+        lat: 10.758334,
+        lng: 106.672211
+      }
+    },
+      {
+        id: 3,
+        title: 'I worked here for three years(2013-2016)',
+        image: 'http://kgtv.vn/wp-content/uploads/2015/07/dai-ptva-th-ghep-may-2015.jpg',
+        address: '39 Dong Da Street, District Vinh Lac, Rach Gia City',
+        location: {
+          lat: 9.994949,
+          lng: 105.095413
+        }
+      },
+  ],
   skills: ['HTML', 'CSS', 'ES6', 'React', 'Redux', 'Angular', 'Git'],
   education: {
     school: [
@@ -16,22 +48,19 @@ const data = {
     ],
     certificate: [
       {
-        certificate: 'Intro programing nanodegree',
+        certificate: 'Intro to Programing Nanodegree',
         school: 'Udacity',
         year: 2016,
-        country: 'American'
       },
       {
-        certificate: 'React Nanodegree programing',
+        certificate: 'React Nanodegree Program',
         school: 'Udacity',
         year: 2017,
-        country: 'American'
       },
       {
-        certificate: 'Frontend developer nanodegree programing',
+        certificate: 'Front-End Web Developer Nanodegree',
         school: 'Udacity',
         year: 2018,
-        country: 'American'
       }
     ]
   },
