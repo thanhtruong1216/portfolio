@@ -7,33 +7,35 @@ class Education extends Component {
     return (
       <section className="education-container">
         <h1>Education</h1>
-        <div>
-          <h3>Degree</h3>
-          {data.education.school.map((school,key) => (
-            <div className="degree" key={key}>
-              <div className="flex-box">
-                <div>{school.degree}</div>
-                <div>{school.year}</div>
+        <div className="education-content-wrapper">
+          <div>
+            <h3>Degree</h3>
+            {data.education.school.map((school,key) => (
+              <div className="degree" key={key}>
+                <div className="flex-box">
+                  <div>{school.degree}</div>
+                  <div>{school.year}</div>
+                </div>
+                <div className="flex-box">
+                  <div>{school.school}</div>
+                </div>
               </div>
-              <div className="flex-box">
-                <div>{school.school}</div>
+            ))}
+          </div>
+          <div>
+            <h3>Certificate(Online course)</h3>
+            {data.education.certificate.map((school,key) => (
+              <div className="certificate" key={key}>
+                <div className="flex-box">
+                  <div>{school.certificate}</div>
+                  <div>{school.year}</div>
+                </div>
+                <div className="flex-box">
+                  <div>{school.school}</div>
+                </div>
               </div>
-            </div>
-          ))}
-        </div>
-        <div>
-          <h3>Certificate(Online course)</h3>
-          {data.education.certificate.map((school,key) => (
-            <div className="certificate" key={key}>
-              <div className="flex-box">
-                <div>{school.certificate}</div>
-                <div>{school.year}</div>
-              </div>
-              <div className="flex-box">
-                <div>{school.school}</div>
-              </div>
-            </div>
-          ))}
+            ))}
+          </div>
         </div>
       </section>
     );
