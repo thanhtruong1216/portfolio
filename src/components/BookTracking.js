@@ -4,34 +4,31 @@ import data from './Data';
 
 class BookTracking extends Component {
   render() {
+    const filterPrjoject = data.projects.filter(project => project.name === 'book tracking app');
     return(
       <section className="project-details-container">
-        <article>
-          <h1>Project The book tracking description</h1>
-          <div className="project-descripton">
-            <h3>Overview</h3>
-            <p>In this project, I created a bookshelf app that allows me to select and categorize books you have read,
-              are currently reading, or want to read.</p>
-          </div>
-          <div className="project-descripton">
-            <h3>Technical used:</h3>
-            <ul>
-              <li>React</li>
-              <li>Babel</li>
-              <li>Webpack</li>
-              <li>Html</li>
-              <li>Css</li>
-            </ul>
-          </div>
-          <div className="project-descripton">
-            <h3>Project goal</h3>
-            <p>
-              The project emphasizes using React to build the application and provides an API server and client library that I
-              used to persist information as I interacted with the application.
-            </p>
-          </div>
-        </article>
-        <a className="see-project-link" href="https://github.com/thanhtruong1216/booksApp">See project on Github</a>
+         <h1>Project The book tracking description</h1>
+        {filterPrjoject.map(project => {
+          return(
+            <article>
+              <div className="project-descripton">
+                <h3>Overview</h3>
+                <p>{project.description.overview}</p>
+              </div>
+              <div className="project-descripton">
+                <h3>Technical used:</h3>
+                <ul>
+                {project.description.technical.map(tech => (<li>{tech}</li>))}
+                </ul>
+              </div>
+              <div className="project-descripton">
+                <h3>Project goal</h3>
+                <p>{project.description.goal}</p>
+              </div>
+              <a className="see-project-link" href="https://github.com/thanhtruong1216/booksApp">See project on Github</a>
+            </article>
+          )
+        })}
       </section>
     );
   }
