@@ -9,10 +9,13 @@ class Header extends Component {
     return(
       <header className="header-container">
         <img className="avatar" src={mepic} alt="udacity-logo" />
-        <p className="name">truong thi ho thanh</p>
-        <p className="slogan">front-end developer</p>
+        <div className="name">
+          <p>trương thị hồ thanh</p>
+          <p>(thanh truong)</p>
+          <p className="slogan">front-end developer</p>
+        </div>
         <Link to="overview/thanh-location" className="white-text">
-          <FontAwesome name="fas fa-map-marker" className="icon white-icon"/>See my location
+          <FontAwesome name="fas fa-map-marker" className="icon white-icon"/>See where I lived and I worked
         </Link>
       </header>
     );

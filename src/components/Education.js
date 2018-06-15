@@ -8,7 +8,7 @@ class Education extends Component {
       <section className="education-container">
         <h1>Education</h1>
         <div>
-          <h3>School</h3>
+          <h3>Degree</h3>
           {data.education.school.map((school,key) => (
             <div className="degree" key={key}>
               <div className="flex-box">
@@ -17,13 +17,12 @@ class Education extends Component {
               </div>
               <div className="flex-box">
                 <div>{school.school}</div>
-                <div>{school.country}</div>
               </div>
             </div>
           ))}
         </div>
         <div>
-          <h3>Certificate</h3>
+          <h3>Certificate(Online course)</h3>
           {data.education.certificate.map((school,key) => (
             <div className="certificate" key={key}>
               <div className="flex-box">
@@ -32,7 +31,6 @@ class Education extends Component {
               </div>
               <div className="flex-box">
                 <div>{school.school}</div>
-                <div>{school.country}</div>
               </div>
             </div>
           ))}
