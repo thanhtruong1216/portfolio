@@ -12,7 +12,7 @@ class Projects extends Component {
           {data.projects.map(project => (
             <div key={project.id} className="project">
               <Link key={project.id} to={`/projects/${project.link}`}>
-                <h2>{project.name}</h2>
+                <h2 className="project-name">{project.name}</h2>
               </Link>
               <div className="project-overview-wrapper">
               <ul className="project-overview" style={project.styles}>
