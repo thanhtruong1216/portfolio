@@ -13,7 +13,9 @@ class Header extends Component {
         <img className="avatar" src={data.introduction.avatar} alt="avatar" />
         <div className="name">
           <p>{data.introduction.name}</p>
-          <p>{data.introduction.location}</p>
+          <p>
+            <FontAwesome name="fas fa-map-marker" className="icon white-icon"/>
+            {data.introduction.location}</p>
           <Footer/>
         </div>
         <div className="roles">
