@@ -93,6 +93,10 @@ article {
   .name p {
     font-size: 12pt;
   }
+
+  .education-container h1 {
+    font-size: 15pt;
+  }
 }
 
 @media screen and (max-width: 767px) {

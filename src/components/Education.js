@@ -6,7 +6,7 @@ class Education extends Component {
   render () {
     return (
       <section className="education-container">
-        <h1>Educations</h1>
+        <h1>Educations & Experiences</h1>
         <div className="education-content-wrapper">
           <div>
             <h3>Degree</h3>
@@ -18,7 +18,7 @@ class Education extends Component {
                 </div>
                 <div className="flex-box">
                   <div>{school.school}</div>
-                  <div></div>
+                  <div>{school.country}</div>
                 </div>
               </div>
             ))}
@@ -38,8 +38,23 @@ class Education extends Component {
               </div>
             ))}
           </div>
+          <div>
+          <h3>Experiences</h3>
+          {data.experiences.map((experience, key) => (
+            <div className="experience" key={key}>
+              <div className="flex-box">
+                <div>{experience.job}</div>
+                <div>{experience.year}</div>
+              </div>
+              <div className="flex-box">
+                <div>{experience.company}</div>
+                <div>{experience.location}</div>
+              </div>
+            </div>
+          ))}
         </div>
-      </section>
+      </div>
+    </section>
     );
   }
 }

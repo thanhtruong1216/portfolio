@@ -15,6 +15,14 @@ const data = {
     location: 'Ho Chi Minh City, Viet Nam',
     desiredRole: 'Frontend Web developer'
   },
+  experiences: [
+    {
+      job: 'Television reporter',
+      year: '2013-2016',
+      location: 'Rach Gia City, Kien Giang Province, Viet Nam',
+      company: 'Kien Giang Radio and Television Station'
+    }
+  ],
   locations: [
     {
       id: 1,
