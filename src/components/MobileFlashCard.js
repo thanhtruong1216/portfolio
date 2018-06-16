@@ -15,7 +15,7 @@ class MobileFlashCard extends Component {
               <p>{project.description.overview}</p>
             </div>
             <div className="project-descripton">
-              <h3>Technical used:</h3>
+              <h3>Technical used</h3>
               <ul>
               {project.description.technical.map(tech => (<li>{tech}</li>))}
               </ul>
