@@ -50,12 +50,12 @@
 
 #html {
   width: 60%;
-  background-color: #4CAF50;
+  background-color: #c66c98;
 }
 
 #css {
   width: 55%;
-  background-color: #ffce2b;
+  background-color: #c66c98;
 }
 
 #javascript {
@@ -65,6 +65,26 @@
 
 #react {
   width: 45%;
-  background-color: #f2933a;
+  background-color: #c66c98;
+}
+
+#rails {
+  width: 45%;
+  background-color: #c66c98;
+}
+
+#angular {
+  width: 55%;
+  background-color: #c66c98;
+}
+
+#react-native {
+  width: 40%;
+  background-color: #c66c98;
+}
+
+#redux {
+  width: 55%;
+  background-color: #c66c98;
 }
 

@@ -11,9 +11,9 @@ class Skills extends Component {
         <div className="full-skills-wrapper">
           {data.skills.map(skill => (
             <div>
-              <p className="skill-name">{skill}</p>
+              <p className="skill-name">{skill.name}</p>
               <div class="skill-container">
-                <div class="skills" id={skill}></div>
+                <div class="skills" id={skill.id}></div>
                 <div className="level-bar">
                   <div>Beginner</div>
                   <div>Intermediate</div>

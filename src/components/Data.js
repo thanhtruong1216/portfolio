@@ -44,7 +44,40 @@ const data = {
         }
       },
   ],
-  skills: [ 'html', 'css', 'javascript','react'],
+  skills: [
+    {
+      name: 'html',
+      id: 'html'
+    },
+    {
+      name: 'css',
+      id: 'css'
+    },
+    {
+      name: 'javascript',
+      id: 'javascript'
+    },
+    {
+      name: 'react',
+      id: 'react'
+    },
+    {
+      name: 'redux',
+      id: 'redux'
+    },
+    {
+      name: 'react native',
+      id: 'react-native'
+    },
+    {
+      name: 'angular',
+      id: 'angular'
+    },
+    {
+      name: 'ruby on rails',
+      id: 'rails'
+    }
+  ],
   education: {
     school: [
       {
