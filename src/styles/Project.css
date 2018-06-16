@@ -28,11 +28,11 @@
 
 .project {
   background: #19a0d8;
-  padding: 20px;
+  padding: 10px;
   text-align: center;
   margin: 10px;
   font-size: 10pt;
-  width: 300px;
+  width: 270px;
   color: white;
   transition: transform .2s;
 }

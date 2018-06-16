@@ -6,7 +6,7 @@ class Education extends Component {
   render () {
     return (
       <section className="education-container">
-        <h1>Education</h1>
+        <h1>Educations</h1>
         <div className="education-content-wrapper">
           <div>
             <h3>Degree</h3>

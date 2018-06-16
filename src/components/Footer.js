@@ -17,7 +17,7 @@ class Footer extends Component {
           ))}
         </ul>
         <div>
-          <small>&copy;coppyright by ThanhTruong</small>
+          <small>&copy;2018 ThanhTruong</small>
         </div>
       </footer>
     );

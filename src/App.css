@@ -42,6 +42,7 @@ h2 {
 
 .flex-box {
   display: flex;
+  align-items: center;
 }
 
 .flex-box div {
@@ -54,6 +55,7 @@ h2 {
 
 .flex-box div:last-child {
   text-align: right;
+  padding: 10px 0 0 0;
 }
 
 .see-project-link {

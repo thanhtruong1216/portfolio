@@ -7,7 +7,7 @@ class Projects extends Component {
   render() {
     return(
       <section className="projects-container">
-        <h1>Project</h1>
+        <h1>Projects</h1>
         <div className="projects-wrapper">
           {data.projects.map(project => (
             <div key={project.id} className="project">

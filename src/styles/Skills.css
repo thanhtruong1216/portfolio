@@ -42,27 +42,30 @@
 
 .level-bar div {
   width: 25%;
-  border-right: 1px solid gray;
   text-align: center;
 }
 
+.level-bar div:not(:last-child) {
+  border-right: 1px solid gray;
+}
+
 #html {
-  width: 75%;
+  width: 60%;
   background-color: #4CAF50;
 }
 
 #css {
-  width: 67%;
+  width: 55%;
   background-color: #ffce2b;
 }
 
 #javascript {
-  width: 65%;
+  width: 51%;
   background-color: #c66c98;
 }
 
 #react {
-  width: 55%;
+  width: 45%;
   background-color: #f2933a;
 }
 

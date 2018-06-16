@@ -7,13 +7,13 @@ class Skills extends Component {
   render() {
     return(
       <div className="skills-container">
-        <h1>Skill</h1>
+        <h1>Skills</h1>
         <div className="full-skills-wrapper">
           {data.skills.map(skill => (
             <div>
-              <p className="skill-name">{skill.name}</p>
+              <p className="skill-name">{skill}</p>
               <div class="skill-container">
-                <div class="skills" id={skill.name}></div>
+                <div class="skills" id={skill}></div>
                 <div className="level-bar">
                   <div>Beginner</div>
                   <div>Intermediate</div>

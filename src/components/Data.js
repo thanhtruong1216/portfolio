@@ -44,28 +44,11 @@ const data = {
         }
       },
   ],
-  skills: [
-    {
-      name: 'html',
-      percent: '90%',
-    },
-    {
-      name: 'css',
-      percent: '80%'
-    },
-    {
-      name: 'javascript',
-      percent: '65%'
-    },
-    {
-      name: 'react',
-      percent: '65%'
-    },
-  ],
+  skills: [ 'html', 'css', 'javascript','react'],
   education: {
     school: [
       {
-        degree: 'Bachelor of Laws',
+        degree: 'The Bachelor of Laws',
         school: 'Can Tho University',
         year: '2009 - 2013',
         country: 'Can Tho City, Viet Nam'
@@ -112,7 +95,7 @@ const data = {
       image: matching,
       skills: ['HTML', 'CSS', 'Javascript'],
       description: {
-        overview: 'The Memory Game Project is all about demonstrating your mastery of HTML, CSS, and JavaScript.I built a complete browser-based card matching game (also known as Concentration).But this isn’t just any memory game! It’s a shnazzy, well-designed, feature-packed memory game!',
+        overview: 'The Memory Game Project is all about demonstrating my mastery of HTML, CSS, and JavaScript. I built a complete browser-based card matching game (also known as Concentration).',
         technical: ['HTML', 'CSS', 'Javascript ES6'],
         goal: 'The game board consists of sixteen "cards" arranged in a grid. The deck is made up of eight different pairs of cards, each with different symbols on one side. The cards are arranged randomly on the grid with the symbol face down. The gameplay rules are very simple: flip over two hidden cards at a time to locate the ones that match!'
       }
@@ -124,7 +107,7 @@ const data = {
       image: book,
       skills: ['React', 'ES6', 'Fetch API', 'Babel' ],
       description: {
-        overview: 'In this project, I created a bookshelf app that allows me to select and categorize books you have read, are currently reading, or want to read.',
+        overview: 'In this project, I created a bookshelf app that allows users to select and categorize books they have read, are currently reading, or want to read.',
         technical: ['React', 'Javascript ES6', 'Fetch API', 'Babel', 'Git', 'Webpack' ],
         goal: 'The project emphasizes using React to build the application and provides an API server and client library that I used to persist information as I interacted with the application.'
       }
