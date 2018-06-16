@@ -4,6 +4,7 @@ import mepic from '../images/mepic.jpg';
 import FontAwesome from 'react-fontawesome';
 import { Link } from 'react-router-dom';
 import data from './Data';
+import Footer from './Contact';
 
 class Header extends Component {
   render() {
@@ -12,12 +13,26 @@ class Header extends Component {
         <img className="avatar" src={data.introduction.avatar} alt="avatar" />
         <div className="name">
           <p>{data.introduction.name}</p>
-          <p className="slogan">{data.introduction.job}</p>
-          <p>{data.introduction.language}</p>
+          <p>{data.introduction.location}</p>
+          <Footer/>
         </div>
-        <Link to="/thanh-location" className="white-text">
+        <div className="roles">
+          <p>
+            <FontAwesome name={data.introduction.icon} className="icon white-icon"/>
+            {data.introduction.job}
+          </p>
+          <p>
+            <FontAwesome name={data.introduction.icon} className="icon white-icon"/>
+            {data.introduction.language}
+          </p>
+          <p>
+            <FontAwesome name={data.introduction.icon} className="icon white-icon"/>
+            Desired Roles: {data.introduction.desiredRole}
+          </p>
+          <Link to="/thanh-location" className="white-text">
           <FontAwesome name="fas fa-map-marker" className="icon white-icon"/>See Where I lived and I worked
         </Link>
+        </div>
       </header>
     );
   }

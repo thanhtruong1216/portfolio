@@ -9,8 +9,11 @@ const data = {
   introduction: {
     avatar: mepic,
     name: 'truong thi ho thanh',
-    job: 'frontend developer',
-    language: 'English, Vietnamese'
+    job: 'frontend web developer',
+    language: 'English, Vietnamese',
+    icon: 'far fa-user',
+    location: 'Ho Chi Minh City, Viet Nam',
+    desiredRole: 'Frontend Web developer'
   },
   locations: [
     {

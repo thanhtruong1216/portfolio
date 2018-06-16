@@ -1,13 +1,13 @@
 import React, { Component } from 'react';
-import '../styles/Footer.css';
+import '../styles/Contact.css';
 import FontAwesome from 'react-fontawesome';
 import data from './Data';
 
-class Footer extends Component {
+class Contact extends Component {
   render() {
     return(
-      <footer className="footer-container">
-        <ul>
+      <section>
+        <ul className="contact-container">
           {data.contact.map(contacInfo => (
             <li>
               <a href={contacInfo.link}>
@@ -16,12 +16,9 @@ class Footer extends Component {
             </li>
           ))}
         </ul>
-        <div>
-          <small>&copy;2018 ThanhTruong</small>
-        </div>
-      </footer>
+      </section>
     );
   }
 }
 
-export default Footer;
+export default Contact;
