@@ -19,7 +19,7 @@ const data = {
     {
       job: 'Television reporter',
       year: '2013-2016',
-      location: 'Rach Gia City, Kien Giang Province, Viet Nam',
+      location: 'Rach Gia City, Viet Nam',
       company: 'Kien Giang Radio and Television Station'
     }
   ],
