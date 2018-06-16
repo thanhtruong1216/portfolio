@@ -18,6 +18,7 @@ class Education extends Component {
                 </div>
                 <div className="flex-box">
                   <div>{school.school}</div>
+                  <div></div>
                 </div>
               </div>
             ))}

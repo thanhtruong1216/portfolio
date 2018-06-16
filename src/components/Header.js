@@ -16,7 +16,7 @@ class Header extends Component {
           <p>{data.introduction.language}</p>
         </div>
         <Link to="/thanh-location" className="white-text">
-          <FontAwesome name="fas fa-map-marker" className="icon white-icon"/>See where I lived and I worked
+          <FontAwesome name="fas fa-map-marker" className="icon white-icon"/>See Where I lived and I worked
         </Link>
       </header>
     );

@@ -55,7 +55,6 @@ h2 {
 
 .flex-box div:last-child {
   text-align: right;
-  padding: 10px 0 0 0;
 }
 
 .see-project-link {
@@ -72,6 +71,28 @@ h2 {
 
 article {
   padding: 0 50px;
+}
+
+@media screen and (max-width: 500px) {
+  .skills {
+    height: 30px;
+  }
+
+  .level-bar {
+    font-size: 7pt;
+  }
+
+  .education-content-wrapper {
+    padding: 0;
+  }
+
+  .full-skills-wrapper {
+    padding: 10px;
+  }
+
+  .name p {
+    font-size: 15pt;
+  }
 }
 
 @media screen and (max-width: 767px) {
