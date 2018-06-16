@@ -18,7 +18,7 @@ class Education extends Component {
                 </div>
                 <div className="flex-box">
                   <div>{school.school}</div>
-                  <div>{school.country}</div>
+                  <div></div>
                 </div>
               </div>
             ))}
@@ -47,8 +47,8 @@ class Education extends Component {
                 <div>{experience.year}</div>
               </div>
               <div className="flex-box">
+                <div></div>
                 <div>{experience.company}</div>
-                <div>{experience.location}</div>
               </div>
             </div>
           ))}
