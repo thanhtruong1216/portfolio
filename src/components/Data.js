@@ -80,14 +80,6 @@ const data = {
       name: 'react native',
       id: 'react-native'
     },
-    {
-      name: 'angular',
-      id: 'angular'
-    },
-    {
-      name: 'ruby on rails',
-      id: 'rails'
-    }
   ],
   education: {
     school: [
