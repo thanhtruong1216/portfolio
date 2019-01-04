@@ -17,17 +17,20 @@
   text-transform: uppercase
   text-align: center
 
-.html .skill-bar-container div:not(:last-child)
-  background-color: #c66c98
+.html, .css
+  .skill-bar-container
+    div:not(:last-child)
+      background-color: #c66c98
 
-.css .skill-bar-container div:not(:last-child)
-  background-color: #c66c98
+.javascript
+  .skill-bar-container
+    div:nth-child(1), div:nth-child(2)
+      background-color: #c66c98
 
-.javascript .skill-bar-container div:not(:last-child)
-  background-color: #c66c98
-
-.react .skill-bar-container div:not(:last-child)
-  background-color: #c66c98
+.react
+  .skill-bar-container
+    div:nth-child(1), div:nth-child(2)
+      background-color: #c66c98
 
 .skill-bar-container
   display: flex

@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
-import '../styles/Header.css';
-import mepic from '../images/mepic.jpg';
+import '../styles/Header.sass';
 import FontAwesome from 'react-fontawesome';
 import { Link } from 'react-router-dom';
 import data from './Data';

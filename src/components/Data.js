@@ -71,15 +71,7 @@ const data = {
     {
       name: 'react',
       id: 'react'
-    },
-    {
-      name: 'redux',
-      id: 'redux'
-    },
-    {
-      name: 'react native',
-      id: 'react-native'
-    },
+    }
   ],
   education: {
     school: [

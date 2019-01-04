@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
-import '../App.css';
+import '../App.scss';
 import styles from './StylesMap';
-import '../styles/Map.css';
+import '../styles/Map.sass';
 import data from './Data';
 
 class GoogleMap extends Component {

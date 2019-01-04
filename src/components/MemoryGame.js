@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import '../styles/Project.css';
+import '../styles/Project.sass';
 import data from './Data';
 
 class MemoryGame extends Component {

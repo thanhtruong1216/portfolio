@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import '../styles/Education.css'
+import '../styles/Education.sass'
 import data from './Data';
 
 class Education extends Component {

@@ -10,7 +10,7 @@ class Skills extends Component {
         <h1>Skills</h1>
         <div className="full-skills-wrapper">
           {data.skills.map(skill => (
-            <div className={skill.id}>
+            <div className={skill.id} key={skill.id}>
               <p className="skill-name">{skill.name}</p>
               <section className="skill-bar-container">
                 <div className="level-1"></div>

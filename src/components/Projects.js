@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import '../styles/Projects.css';
+import '../styles/Projects.sass';
 import { Link } from 'react-router-dom';
 import data from './Data';
 
@@ -22,7 +22,7 @@ class Projects extends Component {
                     );
                   })}
                 </ul>
-                <img src={project.image} className="project-image"/>
+                <img src={project.image} className="project-image" alt="project" />
               </div>
             </div>
           ))}
