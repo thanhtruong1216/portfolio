@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import data from './Data';
-import '../styles/Skills.css';
-import '../styles/Project.css';
+import '../styles/Skills.sass';
+import '../styles/Project.sass';
 
 class Skills extends Component {
   render() {
@@ -10,17 +10,14 @@ class Skills extends Component {
         <h1>Skills</h1>
         <div className="full-skills-wrapper">
           {data.skills.map(skill => (
-            <div>
+            <div className={skill.id}>
               <p className="skill-name">{skill.name}</p>
-              <div class="skill-container">
-                <div class="skills" id={skill.id}></div>
-                <div className="level-bar">
-                  <div>Beginner</div>
-                  <div>Intermediate</div>
-                  <div>Advanced</div>
-                  <div>Expert</div>
-                </div>
-              </div>
+              <section className="skill-bar-container">
+                <div className="level-1"></div>
+                <div className="level-2" ></div>
+                <div className="level-3"></div>
+                <div className="level-4"></div>
+              </section>
             </div>
           ))}
         </div>
