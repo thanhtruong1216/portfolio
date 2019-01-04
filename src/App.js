@@ -4,7 +4,7 @@ import Footer from './components/Contact';
 import Projects from './components/Projects';
 import Skills from './components/Skills';
 import Education from './components/Education';
-import './App.scss';
+import './App.sass';
 import '../node_modules/font-awesome/css/font-awesome.min.css';
 
 class App extends Component {

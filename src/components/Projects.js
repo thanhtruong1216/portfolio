@@ -2,7 +2,6 @@ import React, { Component } from 'react';
 import '../styles/Projects.sass';
 import { Link } from 'react-router-dom';
 import data from './Data';
-
 class Projects extends Component {
   render() {
     return(

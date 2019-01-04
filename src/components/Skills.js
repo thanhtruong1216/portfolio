@@ -2,7 +2,6 @@ import React, { Component } from 'react';
 import data from './Data';
 import '../styles/Skills.sass';
 import '../styles/Project.sass';
-
 class Skills extends Component {
   render() {
     return(
@@ -13,10 +12,10 @@ class Skills extends Component {
             <div className={skill.id} key={skill.id}>
               <p className="skill-name">{skill.name}</p>
               <section className="skill-bar-container">
-                <div className="level-1"></div>
-                <div className="level-2" ></div>
-                <div className="level-3"></div>
-                <div className="level-4"></div>
+                <div className="level-bar level-1" title="Beginer"></div>
+                <div className="level-bar level-2" title="Intermediate"></div>
+                <div className="level-bar level-3" title="Advanced"></div>
+                <div className="level-bar level-4" title="Expert"></div>
               </section>
             </div>
           ))}

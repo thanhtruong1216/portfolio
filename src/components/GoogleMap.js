@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import '../App.scss';
+import '../App.sass';
 import styles from './StylesMap';
 import '../styles/Map.sass';
 import data from './Data';
