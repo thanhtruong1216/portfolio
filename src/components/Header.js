@@ -31,8 +31,8 @@ class Header extends Component {
             Desired Roles: {data.introduction.desiredRole}
           </p>
           <Link to="/thanh-location" className="white-text">
-          <FontAwesome name="fas fa-map-marker" className="icon white-icon"/>See Where I lived and I worked
-        </Link>
+            <FontAwesome name="fas fa-map-marker" className="icon white-icon"/>See Where I lived and I worked
+          </Link>
         </div>
       </header>
     );
