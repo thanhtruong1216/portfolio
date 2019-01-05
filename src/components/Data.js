@@ -21,13 +21,19 @@ const data = {
       year: '2013-2016',
       location: 'Rach Gia City, Viet Nam',
       company: 'Kien Giang Radio and Television Station'
+    },
+    {
+      job: 'Freelancer',
+      year: '2017 from now',
+      location: 'Ho Chi Minh City, Viet Nam',
+      company: ''
     }
   ],
   locations: [
     {
       id: 1,
       title: 'I studied here for four years(2009-2013)',
-      image: 'https://static.panoramio.com.storage.googleapis.com/photos/large/42881250.jpg',
+      image: 'http://imgs.vietnamnet.vn/Images/2017/08/24/07/20170824075752-can-tho.jpg',
       address: '3/2 Street, Ninh Kieu District, Can Tho City',
       location: {
         lat: 10.030999,
