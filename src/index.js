@@ -16,6 +16,8 @@ import MobileFlashCard from './components/MobileFlashCard';
 import MemoryGame from './components/MemoryGame';
 import Neighborhoodmap from './components/Neighborhoodmap';
 import GoogleMap from './components/GoogleMap';
+import AboutMe from './components/AboutMe';
+import Projects from './components/Projects';
 import WebFont from 'webfontloader';
 
 WebFont.load({
@@ -43,6 +45,9 @@ ReactDOM.render(
         <Route path="/projects/neighborhoodmap" component={Neighborhoodmap} />
         <Route path="/projects/mobileflashcard" component={MobileFlashCard} />
         <Route path="/thanh-location" component={GoogleMap} />
+        <Route path="/about-me" component={AboutMe} />
+        <Route path="/projects" component={Projects} />
+        <Route path="/home" component={App} />
       </div>
     </ConnectedRouter>
   </Provider>,

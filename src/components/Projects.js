@@ -2,10 +2,12 @@ import React, { Component } from 'react';
 import '../styles/Projects.sass';
 import { Link } from 'react-router-dom';
 import data from './Data';
+import Navigator from './Navigator';
 class Projects extends Component {
   render() {
     return(
       <section className="projects-container">
+        <Navigator />
         <h1>Projects</h1>
         <div className="projects-wrapper">
           {data.projects.map(project => (
