@@ -46,7 +46,7 @@ ReactDOM.render(
         <Route path="/projects/mobileflashcard" component={MobileFlashCard} />
         <Route path="/thanh-location" component={GoogleMap} />
         <Route path="/about-me" component={AboutMe} />
-        <Route path="/projects" component={Projects} />
+        <Route exact path="/projects" component={Projects} />
         <Route path="/home" component={App} />
       </div>
     </ConnectedRouter>
