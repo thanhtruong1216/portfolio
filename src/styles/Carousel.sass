@@ -1,0 +1,37 @@
+.carousel-container
+  width: 100%
+  height: 100vh
+  display: flex
+  align-items: center
+  justify-content: center
+  padding: 31.5pt 0
+  img
+    height: 60vh
+    width: auto
+    object-fit: cover
+  button
+    border: none
+    background-color: transparent
+    width: 31.5pt
+    height: 31.5pt
+    border: solid black
+    border-width: 0 3px 3px 0
+    display: inline-block
+    padding: 3px
+    &:focus
+      outline: none
+    &:first-child
+      transform: rotate(135deg)
+      //margin-right: 21pt
+    &:last-child
+      transform: rotate(-45deg)
+      //margin-left: 21pt
+
+@media screen and (max-width: 425px)
+  .carousel-container
+    img
+      height: 60vh
+      width: 165pt
+    button
+      width: 21.5pt
+      height: 21.5pt

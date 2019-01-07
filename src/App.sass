@@ -2,20 +2,26 @@
   box-sizing: border-box
 
 .App
-  display: flex
-  justify-content: flex-start
+  //display: flex
+  //justify-content: flex-start
   min-height: 100vh
   width: 100%
-  padding-left: 50pt
+  //padding-left: 50pt
   font-family: 'Roboto Slab'
-  background-color: #E3F2FD
-  background-image: url('./images/avatar.jpg')
-  background-repeat: no-repeat
-  background-size: 100%
-  object-fit: cover
+  // background-color: #E3F2FD
+  background-image: url('https://images.unsplash.com/photo-1464788061904-b026adb5422b?crop=entropy&fit=max&fm=jpg&q=99&w=1780')
+  // background-repeat: no-repeat
+  // background-size: 100%
+  // object-fit: cover
+  background-color: grey
   a
-    padding: 21pt 31.5pt
+    display: inline-block
+    padding: 31pt 31.5pt 31pt 0
     color: white
+
+  .links, .date-time
+    padding-left: 31.5pt
+    padding-top: 21pt
 
 main
   flex: 1
@@ -62,10 +68,13 @@ h2
   color: white
 
 .see-project-link:hover
-  color: black
+  color: grey
 
 article
   padding: 0 31.5pt
+
+.date-time
+  color: white
 
 @media screen and (max-width: 500px)
   .skills

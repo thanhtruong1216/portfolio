@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-
+import '../styles/Carousel.sass';
 class Carousel extends Component {
   state = {
     currentImageIndex: 0
@@ -21,10 +21,10 @@ class Carousel extends Component {
     const {imageUrls} = this.props;
     const {currentImageIndex} = this.state;
     return(
-      <section>
-        <button onClick={this.goToPreviousSlide}>Previous</button>
-        <CarouselItem url={imageUrls[currentImageIndex].image} />
-        <button onClick={this.goToNextSlide}>Next</button>
+      <section className="carousel-container">
+        <button onClick={this.goToPreviousSlide}></button>
+        <CarouselItem url={imageUrls[currentImageIndex]} />
+        <button onClick={this.goToNextSlide}></button>
       </section>
     );
   }
