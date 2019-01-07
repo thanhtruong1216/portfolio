@@ -1,12 +1,16 @@
 import React, { Component } from 'react';
 import '../styles/Projects.sass';
+import '../App.sass';
 import { Link } from 'react-router-dom';
 import data from './Data';
-import Navigator from './Navigator';
 class Projects extends Component {
   render() {
     return(
       <section className="projects-container">
+        <div className="links">
+          <Link className="nav-link" to="/home">Home</Link>
+          <Link className="nav-link" to="/about-me">About me</Link>
+        </div>
         <h1>Projects</h1>
         <div className="projects-wrapper">
           {data.projects.map(project => (

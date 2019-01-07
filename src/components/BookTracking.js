@@ -25,6 +25,7 @@ class BookTracking extends Component {
               <p>{project.description.goal}</p>
             </div>
             <a className="see-project-link" href="https://github.com/thanhtruong1216/booksApp">See project on Github</a>
+            <a className="see-project-link" href="https://booktrackingofthanh.herokuapp.com/">See project on Heroku</a>
           </article>
         ))}
       </section>

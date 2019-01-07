@@ -36,8 +36,8 @@ class App extends Component {
       <section className="App">
         <div className="date-time">{this.state.date.toLocaleTimeString()}</div>
         <div className="links">
-          <Link to="/about-me">About me</Link>
-          <Link to="/projects">Projects</Link>
+          <Link className="nav-link" to="/about-me">About me</Link>
+          <Link className="nav-link" to="/projects">Projects</Link>
         </div>
         <Carousel imageUrls={projecrUrls} />
       </section>
