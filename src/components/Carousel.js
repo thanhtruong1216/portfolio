@@ -17,14 +17,30 @@ class Carousel extends Component {
     })
   }
 
+  componentDidMount = () => {
+    this.interval = setInterval(this.tick, 5000);
+  }
+
+  componentWillUnmount = () => {
+    clearInterval(this.interval);
+  }
+
+  tick = () => {
+    console.log('next');
+    this.goToNextSlide();
+  }
+
   render() {
     const {imageUrls} = this.props;
     const {currentImageIndex} = this.state;
     return(
       <section className="carousel-container">
-        <button onClick={this.goToPreviousSlide}></button>
-        <CarouselItem url={imageUrls[currentImageIndex]} />
-        <button onClick={this.goToNextSlide}></button>
+        <div className="carousel-main-content">
+          <button onClick={this.goToPreviousSlide}></button>
+          <CarouselItem url={imageUrls[currentImageIndex]} />
+          <button onClick={this.goToNextSlide}></button>
+        </div>
+        <Indicator imageUrls={imageUrls} currentImageIndex={currentImageIndex}/>
       </section>
     );
   }
@@ -34,6 +50,21 @@ const CarouselItem = ({url}) => {
   return(
     <img src={url} />
   )
+}
+
+const Indicator = ({imageUrls, currentImageIndex}) => {
+  const indi = imageUrls.map((image, index) => {
+    if(index === currentImageIndex) {
+      return(
+        <span key={index} className="circle circle-active"></span>
+      )
+    } else {
+      return(
+        <span key={index} className="circle"></span>
+      )
+    }
+  })
+  return indi;
 }
 
 export default Carousel;

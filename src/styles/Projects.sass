@@ -1,13 +1,22 @@
+@import "Variables.sass"
+
 .projects-container
-  background-image: url('https://images.unsplash.com/photo-1464788061904-b026adb5422b?crop=entropy&fit=max&fm=jpg&q=99&w=1780')
+  @include main-background
+  min-height: 200vh
+  //background-image: url('https://images.unsplash.com/photo-1464788061904-b026adb5422b?crop=entropy&fit=max&fm=jpg&q=99&w=1780')
   h1
-    background-color: #19a0d8
+   background-color: $blue
+   position: relative
+   top: 50pt
+
 .projects .black-text
   color: black
 
 .projects-wrapper
-  display: flex
-  justify-content: center
+  display: grid
+  grid-template-columns: auto auto auto
   flex-wrap: wrap
-  padding: 0 50px
+  position: relative
+  top: 50pt
+
 

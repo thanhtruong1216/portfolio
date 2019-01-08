@@ -1,28 +1,21 @@
+@import 'styles/Variables.sass'
+
 *
   box-sizing: border-box
 
 .App
-  //display: flex
-  //justify-content: flex-start
   min-height: 100vh
   width: 100%
-  //padding-left: 50pt
   font-family: 'Roboto Slab'
-  // background-color: #E3F2FD
-  background-image: url('https://images.unsplash.com/photo-1464788061904-b026adb5422b?crop=entropy&fit=max&fm=jpg&q=99&w=1780')
-  // background-repeat: no-repeat
-  // background-size: 100%
-  // object-fit: cover
-  background-color: grey
+  @include main-background
 
 .nav-link
   display: inline-block
-  padding: 31pt 31.5pt 31pt 0
-  color: white
+  padding-right: 21pt
+  @include text-color
 
 .links, .date-time
   padding-left: 31.5pt
-  padding-top: 21pt
 
 main
   flex: 1
@@ -40,7 +33,7 @@ h1
   font-size: 25pt
   width: 100%
   margin: 10px 0
-  background-color: #19a0d8
+  background-color: $blue
   color: white
   padding: 10.5pt 31.5pt
 
@@ -56,14 +49,14 @@ h2
   flex: 1
 
 .flex-box a
-  color: #19a0d8
+  color: $blue
 
 .flex-box div:last-child
   text-align: right
 
 .see-project-link
   padding: 10.5pt 21pt
-  background: #19a0d8
+  background: $blue
   border-radius: 5px
   margin: 10.5pt
   color: white
@@ -75,7 +68,7 @@ article
   padding: 0 31.5pt
 
 .date-time
-  color: white
+  color: $black
 
 @media screen and (max-width: 500px)
   .skills

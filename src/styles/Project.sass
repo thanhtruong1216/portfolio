@@ -1,9 +1,14 @@
+@import "Variables.sass"
+
 .project-details-container
   display: flex
   flex-direction: column
   justify-content: center
   align-items: center
   font-family: 'Roboto Slab'
+  @include main-background
+  h1
+    background-color: $blue
 
 .project-details-container h1
   text-align: center
@@ -24,7 +29,7 @@
   line-height: 35px
 
 .project
-  background: #19a0d8
+  background-color: $pink
   padding: 10.5pt
   text-align: center
   margin: 21pt
@@ -33,9 +38,8 @@
   max-width: 260px
   color: white
   transition: transform .2s
-
-.project:hover
-  transform: scale(1.05)
+  &:hover
+    transform: scale(1.05)
 
 .project-overview
   display: flex

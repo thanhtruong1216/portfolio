@@ -1,8 +1,12 @@
 import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
+import FontAwesome from 'react-fontawesome';
+import { Parallax, Background } from 'react-parallax';
 import AboutMe from './components/AboutMe';
 import Carousel from './components/Carousel';
+import Navigator from './components/Navigator';
 import './App.sass';
+import './styles/Variables.sass';
 import '../node_modules/font-awesome/css/font-awesome.min.css';
 import googleMapPic from './images/goolemapPic.png';
 import matchingPic from './images/matchingPic.png';
@@ -35,11 +39,8 @@ class App extends Component {
     return (
       <section className="App">
         <div className="date-time">{this.state.date.toLocaleTimeString()}</div>
-        <div className="links">
-          <Link className="nav-link" to="/about-me">About me</Link>
-          <Link className="nav-link" to="/projects">Projects</Link>
-        </div>
-        <Carousel imageUrls={projecrUrls} />
+        <Navigator />
+        {/* <Carousel imageUrls={projecrUrls} /> */}
       </section>
     );
   }

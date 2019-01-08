@@ -1,7 +1,56 @@
+@import "Variables.sass"
+
 .navigator
-  padding: 21pt 0
+  padding: 31.5pt
+  display: flex
+  padding: 10.5pt
+  position: fixed
+  width: 100vw
+  z-index: 9999999
+  .three-lines
+    div
+      width: 25pt
+      height: 5pt
+      background-color: $blue
+    .second-line
+      margin: 2pt 0
+.x
+  width: 20pt
+  height: 20pt
+  display: block
+  &:before
+    content: ""
+    width: 20pt
+    height: 20pt
+    border-top: 3px solid $blue
+    display: block
+    transform: rotate(45deg)
+  &:after
+    content: ""
+    width: 20pt
+    height: 20pt
+    border-top: 3px solid $blue
+    display: block
+    transform: rotate(-45deg)
+    position: relative
+    left: 13pt
+    bottom: 22pt
+
+.navgation-links
+  display: flex
+  flex-direction: column
+  padding-top: 21pt
   a
-    padding: 21pt 31.5pt
-    color: #19a0d8
-    &:hover
-      color: lightblue
+    color: $black
+
+
+.navigator-active
+  @include main-background
+  opacity: 0.9
+  height: 100vh
+
+
+@media screen and (max-width: 475px)
+  .navigator
+    width: 100vw
+    height: 100vh

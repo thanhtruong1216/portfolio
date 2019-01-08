@@ -3,18 +3,16 @@ import '../styles/Projects.sass';
 import '../App.sass';
 import { Link } from 'react-router-dom';
 import data from './Data';
+import Navigator from './Navigator'
 class Projects extends Component {
   render() {
     return(
       <section className="projects-container">
-        <div className="links">
-          <Link className="nav-link" to="/home">Home</Link>
-          <Link className="nav-link" to="/about-me">About me</Link>
-        </div>
+        <Navigator />
         <h1>Projects</h1>
         <div className="projects-wrapper">
           {data.projects.map(project => (
-            <div key={project.id} className="project">
+            <Link key={project.id} className="project" to={`/projects/${project.link}`}>
               <Link key={project.id} to={`/projects/${project.link}`}>
                 <h2 className="project-name">{project.name}</h2>
               </Link>
@@ -28,7 +26,7 @@ class Projects extends Component {
                 </ul>
                 <img src={project.image} className="project-image" alt="project" />
               </div>
-            </div>
+            </Link>
           ))}
         </div>
       </section>
