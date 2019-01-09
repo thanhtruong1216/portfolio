@@ -11,10 +11,12 @@ class AboutMe extends Component {
   render() {
     return (
       <section className="about-me-container">
-        <Navigator />
-        <Header />
-        <Skills />
-        <Education />
+        <div>
+          <Navigator />
+          <Header />
+          <Skills />
+          <Education />
+        </div>
         <Footer/>
       </section>
     );

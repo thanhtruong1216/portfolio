@@ -5,6 +5,7 @@ import { Parallax, Background } from 'react-parallax';
 import AboutMe from './components/AboutMe';
 import Carousel from './components/Carousel';
 import Navigator from './components/Navigator';
+import Contact from './components/Contact';
 import './App.sass';
 import './styles/Variables.sass';
 import '../node_modules/font-awesome/css/font-awesome.min.css';
@@ -38,9 +39,12 @@ class App extends Component {
   render() {
     return (
       <section className="App">
-        <div className="date-time">{this.state.date.toLocaleTimeString()}</div>
-        <Navigator />
-        {/* <Carousel imageUrls={projecrUrls} /> */}
+        <div>
+          <div className="date-time">{this.state.date.toLocaleTimeString()}</div>
+          <Navigator />
+          <Carousel imageUrls={projecrUrls} />
+        </div>
+        <Contact />
       </section>
     );
   }

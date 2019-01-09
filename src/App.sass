@@ -8,6 +8,8 @@
   width: 100%
   font-family: 'Roboto Slab'
   @include main-background
+  .navigator
+    padding-left: 31.5pt
 
 .nav-link
   display: inline-block
@@ -33,25 +35,30 @@ h1
   font-size: 25pt
   width: 100%
   margin: 10px 0
-  background-color: $blue
-  color: white
-  padding: 10.5pt 31.5pt
+  color: $greyish-brown
+  padding-top: 31.5pt
+  border-bottom: 1px solid $silver
 
 h2
   padding: 0
   margin: 0
 
+h3
+  color: $greyish-brown
+
 .flex-box
   display: flex
   align-items: center
 
-.flex-box div
+.flex-box p
   flex: 1
+  margin: 6pt 0 0 0
+  color: $greyish-brown
 
 .flex-box a
-  color: $blue
+  color: $coral
 
-.flex-box div:last-child
+.flex-box p:last-child
   text-align: right
 
 .see-project-link
@@ -70,35 +77,50 @@ article
 .date-time
   color: $black
 
+.name p
+  color: $greyish-brown
+
 @media screen and (max-width: 500px)
   .skills
     height: 30px
+
   .level-bar
     font-size: 7pt
+
   .education-content-wrapper
     padding: 0
+
   .full-skills-wrapper
     padding: 10px
+
   .name p
     font-size: 12pt
+    color: $greyish-brown
+
   .education-container h1
     font-size: 15pt
 
 @media screen and (max-width: 767px)
   .skill-wrapper li
     font-size: 10pt
+
   .flex-box
     padding: 0 10.5pt
+
   .skill-wrapper
     width: 100vw
     display: flex
     justify-content: space-between
     padding: 0 10px
+
   .skill
     padding: initial
+
   h1, h2
     text-align: center
+
   h3
     padding: 0 10.5pt
+
   .project-details-container h1
     font-size: 14pt

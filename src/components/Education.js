@@ -13,11 +13,11 @@ class Education extends Component {
             {data.education.school.map((school,key) => (
               <div className="degree" key={key}>
                 <div className="flex-box">
-                  <div>{school.degree}</div>
-                  <div>{school.year}</div>
+                  <p>{school.degree}</p>
+                  <p>{school.year}</p>
                 </div>
                 <div className="flex-box">
-                  <div>{school.school}</div>
+                  <p>{school.school}</p>
                   <div></div>
                 </div>
               </div>
@@ -28,12 +28,12 @@ class Education extends Component {
             {data.education.certificate.map((school,key) => (
               <div className="certificate" key={key}>
                 <div className="flex-box">
-                  <div>{school.certificate}</div>
-                  <div>{school.year}</div>
+                  <p>{school.certificate}</p>
+                  <p>{school.year}</p>
                 </div>
                 <div className="flex-box">
-                  <div><a href={school.link}>See certificate</a></div>
-                  <div>{school.school}</div>
+                  <p><a href={school.link}>See certificate</a></p>
+                  <p>{school.school}</p>
                 </div>
               </div>
             ))}
@@ -43,12 +43,12 @@ class Education extends Component {
           {data.experiences.map((experience, key) => (
             <div className="experience" key={key}>
               <div className="flex-box">
-                <div>{experience.job}</div>
-                <div>{experience.year}</div>
+                <p>{experience.job}</p>
+                <p>{experience.year}</p>
               </div>
               <div className="flex-box">
                 <div></div>
-                <div>{experience.company}</div>
+                <p>{experience.company}</p>
               </div>
             </div>
           ))}

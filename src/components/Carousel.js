@@ -40,7 +40,7 @@ class Carousel extends Component {
           <CarouselItem url={imageUrls[currentImageIndex]} />
           <button onClick={this.goToNextSlide}></button>
         </div>
-        <Indicator imageUrls={imageUrls} currentImageIndex={currentImageIndex}/>
+        {/* <Indicator imageUrls={imageUrls} currentImageIndex={currentImageIndex}/> */}
       </section>
     );
   }
@@ -56,11 +56,11 @@ const Indicator = ({imageUrls, currentImageIndex}) => {
   const indi = imageUrls.map((image, index) => {
     if(index === currentImageIndex) {
       return(
-        <span key={index} className="circle circle-active"></span>
+        <img key={index} src={imageUrls[index]} className="circle circle-active" />
       )
     } else {
       return(
-        <span key={index} className="circle"></span>
+        <img key={index} src={imageUrls[index]} className="circle" />
       )
     }
   })

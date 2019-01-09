@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
 import '../styles/Navigator.sass';
+import ScrollLock from './ScrollLock';
 class Navigator extends Component {
   state = {
     showMenuState: false
@@ -26,6 +27,7 @@ class Navigator extends Component {
     } else {
       return(
         <div className="navigator navigator-active">
+          <ScrollLock target="body"/>
           <div className="x" onClick={this.toogleMenu}>
           </div>
           <div className="navgation-links">
