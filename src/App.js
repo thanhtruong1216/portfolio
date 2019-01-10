@@ -4,7 +4,6 @@ import FontAwesome from 'react-fontawesome';
 import { Parallax, Background } from 'react-parallax';
 import AboutMe from './components/AboutMe';
 import Carousel from './components/Carousel';
-import Navigator from './components/Navigator';
 import Contact from './components/Contact';
 import './App.sass';
 import './styles/Variables.sass';
@@ -41,7 +40,6 @@ class App extends Component {
       <section className="App">
         <div>
           <div className="date-time">{this.state.date.toLocaleTimeString()}</div>
-          <Navigator />
           <Carousel imageUrls={projecrUrls} />
         </div>
         <Contact />

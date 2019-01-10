@@ -4,7 +4,6 @@ import Header from './Header';
 import Skills from './Skills';
 import Footer from './Contact';
 import Education from './Education';
-import Navigator from './Navigator';
 import '../App.sass';
 import '../styles/AboutMe.sass';
 class AboutMe extends Component {
@@ -12,7 +11,6 @@ class AboutMe extends Component {
     return (
       <section className="about-me-container">
         <div>
-          <Navigator />
           <Header />
           <Skills />
           <Education />

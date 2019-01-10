@@ -6,49 +6,68 @@
   position: fixed
   width: 100vw
   z-index: 9999999
-  margin-top: 10.5pt
-  .three-lines
-    div
-      width: 25pt
-      height: 5pt
-      background-color: $coral
-    .second-line
-      margin: 2pt 0
-.x
-  width: 20pt
-  height: 20pt
+
+.button-nav
+  position: fixed
+  top: 10px
+  left: 20px
+  width: 40px
+
+.button-nav .inner,
+.button-nav .inner::before,
+.button-nav .inner::after
+  background-color: #000
+  content: ""
   display: block
-  &:before
-    content: ""
-    width: 20pt
-    height: 20pt
-    border-top: 3px solid $coral
-    display: block
-    transform: rotate(45deg)
-  &:after
-    content: ""
-    width: 20pt
-    height: 20pt
-    border-top: 3px solid $coral
-    display: block
-    transform: rotate(-45deg)
-    position: relative
-    left: 13pt
-    bottom: 22pt
+  height: 1px
+  width: 32px
+  -webkit-transition: all .3s ease
+  transition: all .5s cubic-bezier(0.68,-0.55,0.265,1.55)
+
+.button-nav .inner
+  left: 50%
+  position: absolute
+  top: 50%
+  transform: translate(-50%, -50%)
+
+.button-nav .inner::before
+  margin-top: -10px
+  position: absolute
+
+.button-nav .inner::after
+  margin-top: 10px
+  position: absolute
+
+.button-nav.button-close .inner
+  background-color: transparent
+  left: 54%
+
+.button-nav.button-close .inner::before,
+.button-nav.button-close .inner::after
+  transform: rotate(45deg)
+  transform-origin: 0 50%
+  width: 29px
+
+.button-nav.button-close .inner::after
+  transform: rotate(-45deg)
 
 .navgation-links
   display: flex
   flex-direction: column
   padding-top: 21pt
+  margin-left: auto
+  margin-right: auto
+  text-align: center
   a
-    color: $black
-
+    color: $greyish-brown
+    text-transform: uppercase
+    &.active-nav
+      color: $coral
 
 .navigator-active
   @include main-background
   opacity: 0.9
   height: 100vh
-
 
 @media screen and (max-width: 475px)
   .navigator
