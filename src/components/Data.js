@@ -28,7 +28,7 @@ const data = {
     },
     {
       job: 'Freelancer',
-      year: '2017 from now',
+      year: '2017 til now',
       location: 'Ho Chi Minh City, Viet Nam',
       company: ''
     }

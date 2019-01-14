@@ -43,7 +43,7 @@ ReactDOM.render(
         <Navigator/>
         <Route exact path="/" component={App} />
         <Route exact path="/about-me" component={AboutMe} />
-        <Route exact path="/thanh-location" component={GoogleMap} />
+        <Route exact path="/thanh-locations" component={GoogleMap} />
         <Route exact path="/projects" component={Projects} />
         <Route path="/home" component={App} />
         <Route path="/projects/:project" component={Project} />

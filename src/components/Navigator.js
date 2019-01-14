@@ -33,7 +33,7 @@ class Navigator extends Component {
             <NavLink onClick={this.toogleMenu} activeClassName="active-nav" to="/home">Home</NavLink>
             <NavLink onClick={this.toogleMenu} activeClassName="active-nav" to="/about-me">About me</NavLink>
             <NavLink onClick={this.toogleMenu} activeClassName="active-nav" to="/projects">Projects</NavLink>
-            <NavLink onClick={this.toogleMenu} activeClassName="active-nav" to="/thanh-location">Thanh's location</NavLink>
+            <NavLink onClick={this.toogleMenu} activeClassName="active-nav" to="/thanh-locations">Thanh's location</NavLink>
           </div>
         </div>
       )
