@@ -39,7 +39,7 @@ const store = createStore(
 ReactDOM.render(
   <Provider store={store}>
     <ConnectedRouter history={history}>
-      <>
+      <div>
         <Navigator/>
         <Route exact path="/" component={App} />
         <Route exact path="/about-me" component={AboutMe} />
@@ -47,7 +47,7 @@ ReactDOM.render(
         <Route exact path="/projects" component={Projects} />
         <Route path="/home" component={App} />
         <Route path="/projects/:project" component={Project} />
-      </>
+      </div>
     </ConnectedRouter>
   </Provider>,
   document.getElementById('root')

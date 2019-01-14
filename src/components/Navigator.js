@@ -17,16 +17,16 @@ class Navigator extends Component {
     if(!this.state.showMenuState) {
       return (
         <div className="navigator">
-          <a href="#" class="button-nav" onClick={this.toogleMenu}>
-            <div class="inner"></div>
+          <a href="#" className="button-nav" onClick={this.toogleMenu}>
+            <div className="inner"></div>
           </a>
         </div>
       );
     } else {
       return(
         <div className="navigator navigator-active">
-          <a href="#" class="button-nav button-close" onClick={this.toogleMenu}>
-            <div class="inner"></div>
+          <a href="#" className="button-nav button-close" onClick={this.toogleMenu}>
+            <div className="inner"></div>
           </a>
           <ScrollLock target="body"/>
           <div className="navgation-links">

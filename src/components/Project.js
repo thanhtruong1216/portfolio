@@ -8,11 +8,22 @@ class Project extends Component {
 
   render() {
     const { match } = this.props;
-
+    let projectLink = null;
     const project = data.projects.find(project => project.link === match.params.project);
 
     if(!project) {
       return null;
+    }
+
+    if(project.urlHeroku !== '') {
+      projectLink = (
+        <div>
+          <a className="see-project-link" href={project.urlGitHub}>See project on Github</a>
+          <a className="see-project-link" href={project.urlHeroku}>See project on Heroku</a>
+        </div>
+      )
+    } else {
+      projectLink = (<a className="see-project-link" href={project.urlGitHub}>See project on Github</a>)
     }
 
     return(
@@ -24,7 +35,7 @@ class Project extends Component {
               <p>{project.description.overview}</p>
             </div>
             <div className="project-descripton">
-              <h3>Technical used</h3>
+              <h3>Technology</h3>
               <ul>
               {project.description.technical.map(tech => (<li>{tech}</li>))}
               </ul>
@@ -33,7 +44,7 @@ class Project extends Component {
               <h3>Project goal</h3>
               <p>{project.description.goal}</p>
             </div>
-            <a className="see-project-link" href="https://github.com/thanhtruong1216/readable">See project on Github</a>
+            {projectLink}
           </article>
       </section>
     );

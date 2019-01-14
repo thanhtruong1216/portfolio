@@ -1,19 +1,30 @@
 import React, { Component } from 'react';
 import '../styles/Carousel.sass';
+import { Link } from 'react-router-dom';
 class Carousel extends Component {
   state = {
-    currentImageIndex: 0
+    currentImageIndex: 0,
+    clickImage: false
   }
 
   goToPreviousSlide = () => {
-    this.setState({
-      currentImageIndex: (this.state.currentImageIndex + this.props.imageUrls.length - 1) % this.props.imageUrls.length
-    })
+    this.goToSlide(this.state.currentImageIndex - 1);
   }
 
   goToNextSlide = () => {
+    this.goToSlide(this.state.currentImageIndex + 1);
+  }
+
+  goToSlide = (i) => {
+    const n = this.props.imageUrls.length;
     this.setState({
-      currentImageIndex: (this.state.currentImageIndex + 1) % this.props.imageUrls.length
+      currentImageIndex: (i + n) % n
+    })
+  }
+
+  showImage = () => {
+    this.setState({
+      clickImage: true
     })
   }
 
@@ -26,21 +37,22 @@ class Carousel extends Component {
   }
 
   tick = () => {
-    console.log('next');
     this.goToNextSlide();
   }
 
   render() {
-    const {imageUrls} = this.props;
+    const { imageUrls, links } = this.props;
     const {currentImageIndex} = this.state;
     return(
       <section className="carousel-container">
         <div className="carousel-main-content">
           <button onClick={this.goToPreviousSlide}></button>
-          <CarouselItem url={imageUrls[currentImageIndex]} />
+          <Link to={`/projects/${links[currentImageIndex]}`}>
+            <CarouselItem url={imageUrls[currentImageIndex]}/>
+          </Link>
           <button onClick={this.goToNextSlide}></button>
         </div>
-        {/* <Indicator imageUrls={imageUrls} currentImageIndex={currentImageIndex}/> */}
+        <Indicator imageUrls={imageUrls} currentImageIndex={currentImageIndex} goToSlide={this.goToSlide}/>
       </section>
     );
   }
@@ -52,17 +64,12 @@ const CarouselItem = ({url}) => {
   )
 }
 
-const Indicator = ({imageUrls, currentImageIndex}) => {
+const Indicator = ({imageUrls, currentImageIndex, goToSlide}) => {
   const indi = imageUrls.map((image, index) => {
-    if(index === currentImageIndex) {
-      return(
-        <img key={index} src={imageUrls[index]} className="circle circle-active" />
-      )
-    } else {
-      return(
-        <img key={index} src={imageUrls[index]} className="circle" />
-      )
-    }
+    const classes = index === currentImageIndex ? 'circle circle-active' : 'circle';
+    return(
+      <img key={index} src={image} className={classes} onClick={() => goToSlide(index)}/>
+    )
   })
   return indi;
 }

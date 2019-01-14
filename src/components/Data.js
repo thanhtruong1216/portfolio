@@ -1,9 +1,13 @@
 import matching from '../images/memory.png';
 import map from '../images/map.png';
-import readable from '../images/readable.png';
 import book from '../images/book.png';
 import expo from '../images/expoo.jpg';
 import mepic from '../images/mepic.jpg';
+import googleMapPic from '../images/goolemapPic.png';
+import matchingGameCarousel from '../images/memoryPicCarousel.png';
+import readablePhoto from '../images/readablePhoto.png';
+import readablePhotoNor from '../images/readablePhotoNor.png';
+import bookAppCarousel from '../images/bookAppCarousel.png';
 
 const data = {
   introduction: {
@@ -114,7 +118,10 @@ const data = {
       id: 1,
       name: 'neighborhood map',
       link: 'neighborhoodmap',
+      urlGitHub: 'https://github.com/thanhtruong1216/react-map',
+      urlHeroku: 'https://reactmapofthanh.herokuapp.com/',
       image: map,
+      carouselImage: googleMapPic,
       skills: ['React', 'FourSquare API', 'NPM', 'Git' ],
       description: {
         overview: 'Project prerequisite: I need to know about Google map with Javascript before to build React map application. Besides that, I also have a knowledge about React and the relation between Javascipt with React.',
@@ -126,7 +133,10 @@ const data = {
       id: 2,
       name: 'memory game',
       link: "memorygame",
+      urlGitHub: 'https://github.com/thanhtruong1216/memory-game',
+      urlHeroku: 'https://memorygameofthanh.herokuapp.com/',
       image: matching,
+      carouselImage: matchingGameCarousel,
       skills: ['HTML', 'CSS', 'Javascript'],
       description: {
         overview: 'The Memory Game Project is all about demonstrating my mastery of HTML, CSS, and JavaScript. I built a complete browser-based card matching game (also known as Concentration).',
@@ -138,7 +148,10 @@ const data = {
       id: 3,
       name: 'book tracking app',
       link: 'booktracking',
-      image: book,
+      urlGitHub: 'https://github.com/thanhtruong1216/booksApp',
+      urlHeroku: '',
+      image: bookAppCarousel,
+      carouselImage: book,
       skills: ['React', 'ES6', 'Fetch API', 'Babel' ],
       description: {
         overview: 'In this project, I created a bookshelf app that allows users to select and categorize books they have read, are currently reading, or want to read.',
@@ -150,7 +163,10 @@ const data = {
       id: 4,
       name: 'mobile flashcard',
       link: 'mobileflashcard',
+      urlGitHub: 'https://github.com/thanhtruong1216/thanhtruong-mobile-flashcard',
+      urlHeroku: '',
       image: expo,
+      carouselImage: expo,
       skills: ['React Native', 'Babel', 'Expo', 'Git' ],
       description: {
         overview: 'For the UdaciCards project, I built a mobile application (Android or iOS - or both) that allows users to study collections of flashcards.',
@@ -162,7 +178,10 @@ const data = {
       id: 5,
       name: 'readable',
       link: 'readable',
-      image: readable,
+      urlGitHub: 'https://github.com/thanhtruong1216/readable',
+      urlHeroku: '',
+      image: readablePhotoNor,
+      carouselImage: readablePhoto,
       skills: ['Redux','Fetch API', 'Babel', 'Webpack'],
       description: {
         overview: "For the Readable project, I built a content and comment web app. Users will be able to post content to predefined categories, comment on their posts and other users' posts, and vote on posts and comments. Users will also be able to edit and delete posts and comments.",

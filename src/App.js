@@ -5,14 +5,23 @@ import { Parallax, Background } from 'react-parallax';
 import AboutMe from './components/AboutMe';
 import Carousel from './components/Carousel';
 import Contact from './components/Contact';
+import Clock from './components/Carousel';
 import './App.sass';
 import './styles/Variables.sass';
 import '../node_modules/font-awesome/css/font-awesome.min.css';
 import googleMapPic from './images/goolemapPic.png';
 import matchingPic from './images/matchingPic.png';
 import readablePic from './images/readablePic.png';
+import data from './components/Data';
 
-const projecrUrls = [googleMapPic, matchingPic, readablePic];
+const projecrUrls = data.projects.map((project) => {
+  return project.carouselImage
+})
+
+const links = data.projects.map((project) => {
+  return project.link
+})
+
 class App extends Component {
   constructor() {
     super();
@@ -38,11 +47,9 @@ class App extends Component {
   render() {
     return (
       <section className="App">
-        <div>
-          <div className="date-time">{this.state.date.toLocaleTimeString()}</div>
-          <Carousel imageUrls={projecrUrls} />
-        </div>
-        <Contact />
+        <div className="date-time">{this.state.date.toLocaleTimeString()}</div>
+        {/* <Carousel imageUrls={projecrUrls} links={links} /> */}
+        {/* <Contact /> */}
       </section>
     );
   }
