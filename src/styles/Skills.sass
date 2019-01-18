@@ -1,51 +1,81 @@
 @import 'Variables.sass'
-
-.full-skills-wrapper
-  padding: 10.5pt 21pt
-  display: flex
-  justify-content: space-between
-
-.skill
-  display: flex
-  justify-content: center
-  align-items: center
-  padding: 0 21pt
-
 .skill-name
   text-transform: uppercase
-  text-align: center
   color: $greyish-brown
 
-.html, .css
+@media screen and (min-width: 767px)
+  .full-skills-wrapper
+    padding: 10.5pt 21pt
+    display: flex
+    justify-content: space-between
+
+  .skill
+    display: flex
+    justify-content: center
+    align-items: center
+    padding: 0 21pt
+
+  .html, .css
+    .skill-bar-container
+      div:not(:last-child)
+        background-color: $coral
+
+  .javascript, .react
+    .skill-bar-container
+      div:nth-child(1), div:nth-child(2)
+        background-color: $coral
+
   .skill-bar-container
-    div:not(:last-child)
-      background-color: $coral
+    display: flex
+    align-items: baseline
 
-.javascript, .react
+    .level-1
+      height: 20pt
+
+    .level-2
+      height: 25pt
+
+    .level-3
+      height: 30pt
+
+    .level-4
+      height: 35pt
+
+    .level-bar
+      width: 5pt
+      border: 1px solid $coral
+      margin-left: 5pt
+
+@media screen and(max-width: 426px)
+  .skills-container h1
+    font-size: 18pt
+
+  .html, .css
+    .skill-bar-container
+      background-color: $coral
+      width: 80%
+      height: 10pt
+      z-index: 99999
+
+  .javascript, .react
+    .skill-bar-container
+      background-color: $coral
+      width: 60%
+      height: 10pt
+      z-index: 99999
+      border: none
+
   .skill-bar-container
-    div:nth-child(1), div:nth-child(2)
-      background-color: $coral
+    &:before
+      content: ""
+      background: $greyish-brown
+      height: 10pt
+      width: 95vw
+      display: inline-block
+      opacity: 0.2
 
-.skill-bar-container
-  display: flex
-  align-items: baseline
 
-.level-1
-  height: 20pt
 
-.level-2
-  height: 25pt
-
-.level-3
-  height: 30pt
-
-.level-4
-  height: 35pt
-
-.level-bar
-  width: 5pt
-  border: 1px solid $coral
-  margin-left: 5pt
 
 
 
