@@ -40,7 +40,6 @@ ReactDOM.render(
   <Provider store={store}>
     <ConnectedRouter history={history}>
       <div>
-        <Navigator/>
         <Route exact path="/" component={App} />
         <Route exact path="/about-me" component={AboutMe} />
         <Route exact path="/thanh-locations" component={GoogleMap} />

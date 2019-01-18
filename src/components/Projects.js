@@ -3,11 +3,13 @@ import '../styles/Projects.sass';
 import '../App.sass';
 import { Link } from 'react-router-dom';
 import data from './Data';
-import Contact from './Contact'
+import Contact from './Contact';
+import Navigator from './Navigator';
 class Projects extends Component {
   render() {
     return(
       <section className="projects-container">
+        <Navigator />
         <div>
           <h1>Projects</h1>
           <div className="projects-wrapper">

@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
-import { Link } from 'react-router-dom';
 import Header from './Header';
+import Navigator from './Navigator';
 import Skills from './Skills';
 import Footer from './Contact';
 import Education from './Education';
@@ -10,6 +10,7 @@ class AboutMe extends Component {
   render() {
     return (
       <section className="about-me-container">
+        <Navigator />
         <div>
           <Header />
           <Skills />

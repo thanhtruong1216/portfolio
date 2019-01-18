@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import '../App.sass';
 import styles from './StylesMap';
 import '../styles/Map.sass';
+import Navigator from './Navigator';
 import data from './Data';
 
 class GoogleMap extends Component {
@@ -98,7 +99,11 @@ class GoogleMap extends Component {
 
   render() {
     return (
-      <div className="map" id="map"></div>
+      <section>
+        <Navigator />
+        <div className="map" id="map">
+        </div>
+      </section>
     );
   }
 }

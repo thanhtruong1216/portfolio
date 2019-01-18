@@ -7,12 +7,24 @@
   min-height: 100vh
   width: 100%
   font-family: 'Roboto Slab'
-  background-image: url('./images/avatar.jpg')
+  // background-image: url('./images/avatar.jpg')
   background-size: 100% auto
   background-repeat: no-repeat
   @include main-background
   .navigator
     padding-left: 31.5pt
+    .button-nav
+      display: none
+  .navgation-links
+    width: 100vw
+    a
+      font-family: 'Raleway'
+
+.rcw-conversation-container > .rcw-header
+  background-color: $coral
+
+.rcw-launcher
+  background-color: $coral
 
 .nav-link
   display: inline-block

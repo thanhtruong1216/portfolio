@@ -1,23 +1,16 @@
 import React, { Component } from 'react';
-import { Link } from 'react-router-dom';
+import { NavLink } from 'react-router-dom';
 import FontAwesome from 'react-fontawesome';
-import { Parallax, Background } from 'react-parallax';
-import AboutMe from './components/AboutMe';
-import Carousel from './components/Carousel';
-import Contact from './components/Contact';
-import Clock from './components/Carousel';
+import { Widget, addResponseMessage, addLinkSnippet, addUserMessage } from 'react-chat-widget';
+import 'react-chat-widget/lib/styles.css';
 import './App.sass';
 import './styles/Variables.sass';
 import '../node_modules/font-awesome/css/font-awesome.min.css';
-import googleMapPic from './images/goolemapPic.png';
-import matchingPic from './images/matchingPic.png';
-import readablePic from './images/readablePic.png';
 import data from './components/Data';
 
 const projecrUrls = data.projects.map((project) => {
   return project.carouselImage
 })
-
 const links = data.projects.map((project) => {
   return project.link
 })
@@ -32,6 +25,7 @@ class App extends Component {
 
   componentDidMount = () => {
     this.timerID = setInterval(() => this.tick(), 1000);
+    addResponseMessage("Welcome to Thanh's house!");
   }
 
   componentWillUnmount = ()  => {
@@ -44,12 +38,22 @@ class App extends Component {
     });
   }
 
+  handleNewUserMessage = (newMessage) => {
+    console.log(`New message incoming! ${newMessage}`);
+    // Now send the message throught the backend API
+  }
+
+
   render() {
     return (
       <section className="App">
         <div className="date-time">{this.state.date.toLocaleTimeString()}</div>
-        {/* <Carousel imageUrls={projecrUrls} links={links} /> */}
-        {/* <Contact /> */}
+        <div className="navgation-links">
+          <NavLink activeClassName="active-nav" to="/home">Home</NavLink>
+          <NavLink activeClassName="active-nav" to="/about-me">About me</NavLink>
+          <NavLink activeClassName="active-nav" to="/projects">Projects</NavLink>
+          <NavLink activeClassName="active-nav" to="/thanh-locations">Thanh's locations</NavLink>
+        </div>
       </section>
     );
   }
