@@ -5,17 +5,17 @@ import '../styles/Project.sass';
 class Skills extends Component {
   render() {
     return(
-      <div className="skills-container">
+      <div className="skills">
         <h1>Skills</h1>
-        <div className="full-skills-wrapper">
+        <div className="skills__wrapper">
           {data.skills.map(skill => (
             <div className={skill.id} key={skill.id}>
-              <p className="skill-name">{skill.name}</p>
-              <section className="skill-bar-container">
-                <div className="level-bar level-1" title="Beginer"></div>
-                <div className="level-bar level-2" title="Intermediate"></div>
-                <div className="level-bar level-3" title="Advanced"></div>
-                <div className="level-bar level-4" title="Expert"></div>
+              <p className="skills__skill-name">{skill.name}</p>
+              <section className="skills__levels-bar">
+                <div className="skills__level-bar skills__level-1" title="Beginer"></div>
+                <div className="skills__level-bar skills__level-2" title="Intermediate"></div>
+                <div className="skills__level-bar skills__level-3" title="Advanced"></div>
+                <div className="skills__level-bar skills__level-4" title="Expert"></div>
               </section>
             </div>
           ))}
