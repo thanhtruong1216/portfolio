@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import Carousel from './Carousel';
+import '../styles/Features.sass';
 import data from './Data';
 
 const projecrUrls = data.projects.map((project) => {
@@ -11,7 +12,7 @@ const links = data.projects.map((project) => {
 class Features extends Component {
   render() {
     return(
-      <section>
+      <section className="features">
         <h1>Features</h1>
         <Carousel imageUrls={projecrUrls} links={links} />
       </section>
