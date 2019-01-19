@@ -27,20 +27,20 @@ class Project extends Component {
     }
 
     return(
-      <section className="project-details-container">
+      <section className="project">
         <h1>Project {project.name} tracking description</h1>
           <article>
-            <div className="project-descripton">
+            <div className="project__descripton">
               <h3>Overview</h3>
               <p>{project.description.overview}</p>
             </div>
-            <div className="project-descripton">
+            <div className="project__descripton">
               <h3>Technology</h3>
               <ul>
               {project.description.technical.map(tech => (<li>{tech}</li>))}
               </ul>
             </div>
-            <div className="project-descripton">
+            <div className="project__descripton">
               <h3>Project goal</h3>
               <p>{project.description.goal}</p>
             </div>

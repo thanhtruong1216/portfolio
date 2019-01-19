@@ -7,23 +7,23 @@ import Footer from './Footer';
 class Projects extends Component {
   render() {
     return(
-      <section className="projects-container">
+      <section className="projects">
         {/* <Navigator /> */}
         <div>
           <h1>Projects</h1>
-          <div className="projects-wrapper">
+          <div className="projects__content">
             {data.projects.map(project => (
-              <Link key={project.id} className="project" to={`/projects/${project.link}`}>
-                <h2 className="project-name">{project.name}</h2>
-                <div className="project-overview-wrapper">
-                <ul className="project-overview" style={project.styles}>
+              <Link key={project.id} className="projects__project" to={`/projects/${project.link}`}>
+                <h2 className="projects__project-name">{project.name}</h2>
+                <div className="projects__overview-wrapper">
+                <ul className="projects__project-overview" style={project.styles}>
                     {project.skills.map((skill, key) => {
                       return (
-                        <li className="project-skill" key={key}>{skill}</li>
+                        <li className="projects__project-skill" key={key}>{skill}</li>
                       );
                     })}
                   </ul>
-                  <img src={project.image} className="project-image" alt="project" />
+                  <img src={project.image} className="projects__project-image" alt="project" />
                 </div>
               </Link>
             ))}
