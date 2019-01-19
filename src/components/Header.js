@@ -6,9 +6,9 @@ import data from './Data';
 class Header extends Component {
   render() {
     return(
-      <header className="header-container">
-        <img className="avatar" src={this.props.avatar} alt="avatar" />
-        <div className="name">
+      <header className="header">
+        <img className="header__avatar" src={this.props.avatar} alt="avatar" />
+        <div className="header__name">
           <p>{this.props.name}</p>
         </div>
       </header>
