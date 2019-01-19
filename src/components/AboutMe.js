@@ -9,8 +9,8 @@ import data from './Data'
 class AboutMe extends Component {
   render() {
     return (
-      <section className="about-me-container">
-        <div>
+      <section className="personal">
+        <div className="personal__main-content">
           <Header name={data.introduction.name} avatar={data.introduction.avatar}/>
           <Skills />
           <Education />

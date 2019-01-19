@@ -44,15 +44,15 @@ class Carousel extends Component {
     const { imageUrls, links } = this.props;
     const {currentImageIndex} = this.state;
     return(
-      <section className="carousel-container">
-        <div className="carousel-main-content">
+      <section className="carousel">
+        <div className="carousel__main-content">
           <button onClick={this.goToPreviousSlide}></button>
           <Link to={`/projects/${links[currentImageIndex]}`}>
             <CarouselItem url={imageUrls[currentImageIndex]}/>
           </Link>
           <button onClick={this.goToNextSlide}></button>
         </div>
-        <div className="indicator-container">
+        <div className="carousel__indicator-container">
           <Indicator imageUrls={imageUrls} currentImageIndex={currentImageIndex} goToSlide={this.goToSlide}/>
         </div>
       </section>
@@ -62,13 +62,13 @@ class Carousel extends Component {
 
 const CarouselItem = ({url}) => {
   return(
-    <img src={url} />
+    <img className="carousel__slide" src={url} />
   )
 }
 
 const Indicator = ({imageUrls, currentImageIndex, goToSlide}) => {
   const indi = imageUrls.map((image, index) => {
-    const classes = index === currentImageIndex ? 'circle circle-active' : 'circle';
+    const classes = index === currentImageIndex ? 'carousel__circle carousel__circle-active' : 'carousel__circle';
     return(
       <img key={index} src={image} className={classes} onClick={() => goToSlide(index)}/>
     )
