@@ -19,8 +19,8 @@ class App extends Component {
   render() {
     return (
       <section className="App">
-        <Header name="Thanh Truong" avatar={data.introduction.avatar} />
         <div className="navgation-links">
+          <Header name="Thanh Truong" avatar={data.introduction.avatar} />
           <NavLink activeClassName="active-nav" to="/about-me">About me</NavLink>
           <NavLink activeClassName="active-nav" to="/projects">Projects</NavLink>
           <NavLink activeClassName="active-nav" to="/thanh-locations">Thanh's locations</NavLink>

@@ -6,6 +6,8 @@
   position: fixed
   width: 100vw
   z-index: 9999999
+  background-color: transparent
+  transition: background-color 0.2s ease
 
 .button-nav
   position: fixed
@@ -69,7 +71,7 @@
 
 .navigator-active
   @include main-background
-  opacity: 0.9
+  background-color: rgba(253, 244, 237, 0.7)
   height: 100vh
 
 @media screen and (max-width: 475px)
