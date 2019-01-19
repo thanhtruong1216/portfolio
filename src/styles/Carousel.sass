@@ -18,8 +18,8 @@
   button
     border: none
     background-color: transparent
-    width: 31.5pt
-    height: 31.5pt
+    width: 10.5pt
+    height: 10.5pt
     border: solid black
     border-width: 0 1px 1px 0
     display: inline-block
@@ -45,8 +45,22 @@
     background-color: $black
     border: 3px solid red
 
+.carousel-container
+  .circle
+    width: 35pt
+    height: 35pt
 
-@media screen and (max-width: 425px)
+.indicator-container
+  display: flex
+  flex-wrap: nowrap
+  justify-content: center
+
+.carousel-container
+  .carousel-main-content
+    img
+      width: 75vw
+
+@media screen and (min-width: 767px)
   .carousel-container
     img
       height: 60vh
@@ -54,3 +68,13 @@
     button
       width: 21.5pt
       height: 21.5pt
+
+  .carousel-container
+    .circle
+      width: 100pt
+      height: 100pt
+
+  .carousel-container
+    button
+      width: 31.5pt
+      height: 31.5pt

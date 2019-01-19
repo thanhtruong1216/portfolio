@@ -15,6 +15,7 @@ import Navigator from './components/Navigator';
 import AboutMe from './components/AboutMe';
 import Projects from './components/Projects';
 import Project from './components/Project';
+import Features from './components/Features';
 import WebFont from 'webfontloader';
 
 WebFont.load({
@@ -41,6 +42,7 @@ ReactDOM.render(
         <Route exact path="/thanh-locations" component={GoogleMap} />
         <Route exact path="/projects" component={Projects} />
         <Route path="/projects/:project" component={Project} />
+        <Route exact path="/features" component={Features} />
       </div>
     </ConnectedRouter>
   </Provider>,

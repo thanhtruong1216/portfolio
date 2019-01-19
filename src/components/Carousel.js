@@ -52,7 +52,9 @@ class Carousel extends Component {
           </Link>
           <button onClick={this.goToNextSlide}></button>
         </div>
-        <Indicator imageUrls={imageUrls} currentImageIndex={currentImageIndex} goToSlide={this.goToSlide}/>
+        <div className="indicator-container">
+          <Indicator imageUrls={imageUrls} currentImageIndex={currentImageIndex} goToSlide={this.goToSlide}/>
+        </div>
       </section>
     );
   }
