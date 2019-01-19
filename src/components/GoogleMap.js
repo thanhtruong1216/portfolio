@@ -28,6 +28,8 @@ class GoogleMap extends Component {
     let mapConfigs = {
       center: { lat: 10.758334, lng: 106.672211 },
       zoom: 8,
+      maxZoom: 15,
+      minZoom: 6,
       styles: styles,
       mapTypeControl: false
     };
@@ -90,7 +92,7 @@ class GoogleMap extends Component {
       });
     }
 
-// Show info window when click on the name of the location
+  // Show info window when click on the name of the location
   showInfowindowForLocation = (location) => {
     this.populateInfoWindow(this.markers[location.id]);
   }
