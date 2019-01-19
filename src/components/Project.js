@@ -17,7 +17,7 @@ class Project extends Component {
 
     if(project.urlHeroku !== '') {
       projectLink = (
-        <div>
+        <div className="project-link">
           <a className="see-project-link" href={project.urlGitHub}>See project on Github</a>
           <a className="see-project-link" href={project.urlHeroku}>See project on Heroku</a>
         </div>

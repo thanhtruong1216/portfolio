@@ -2,7 +2,6 @@ import React, { Component } from 'react';
 import { NavLink } from 'react-router-dom';
 import '../styles/Navigator.sass';
 import ScrollLock from './ScrollLock';
-import data from './Data';
 class Navigator extends Component {
   state = {
     showMenuState: false
@@ -31,7 +30,7 @@ class Navigator extends Component {
           </a>
           <ScrollLock target="body"/>
           <div className="navgation-links">
-            <NavLink onClick={this.toogleMenu} activeClassName="active-nav" to="/home">Home</NavLink>
+            <NavLink onClick={this.toogleMenu} activeClassName="active-nav" to="/">Home</NavLink>
             <NavLink onClick={this.toogleMenu} activeClassName="active-nav" to="/about-me">About me</NavLink>
             <NavLink onClick={this.toogleMenu} activeClassName="active-nav" to="/projects">Projects</NavLink>
             <NavLink onClick={this.toogleMenu} activeClassName="active-nav" to="/thanh-locations">Thanh's locations</NavLink>
