@@ -17,7 +17,7 @@ class Project extends Component {
 
     if(project.urlHeroku !== '') {
       projectLink = (
-        <div className="project-link">
+        <div className="project__links">
           <a className="see-project-link" href={project.urlGitHub}>See project on Github</a>
           <a className="see-project-link" href={project.urlHeroku}>See project on Heroku</a>
         </div>
@@ -30,17 +30,17 @@ class Project extends Component {
       <section className="project">
         <h1>Project {project.name} tracking description</h1>
           <article>
-            <div className="project__descripton">
+            <div className="project__description">
               <h3>Overview</h3>
               <p>{project.description.overview}</p>
             </div>
-            <div className="project__descripton">
-              <h3>Technology</h3>
+            <div className="project__description">
+              <h3>Technologies</h3>
               <ul>
               {project.description.technical.map(tech => (<li>{tech}</li>))}
               </ul>
             </div>
-            <div className="project__descripton">
+            <div className="project__description">
               <h3>Project goal</h3>
               <p>{project.description.goal}</p>
             </div>
