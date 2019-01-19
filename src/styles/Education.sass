@@ -1,5 +1,30 @@
-.degree, .certificate, .experience
-  padding: 10.5pt 0
+@import 'Variables.sass'
 
-.education-content-wrapper
-  padding: 0 10.5pt
+.education
+  &__degree
+    padding: 10.5pt 0
+
+  &__certificates
+    padding: 10.5pt 0
+
+  &__content
+    padding: 10.5pt 0
+
+  &__content-wrapper
+    padding: 0 10.5pt
+
+  &__flex-box
+    display: flex
+    align-items: center
+    padding: 0 10.5pt
+    line-height: 17pt
+    p
+      flex: 1
+      margin: 6pt 0 0 0
+      color: $greyish-brown
+       font-size: 10.5pt
+    a
+      color: $coral
+
+    p:last-child
+      text-align: right
