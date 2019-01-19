@@ -7,9 +7,9 @@ class Header extends Component {
   render() {
     return(
       <header className="header-container">
-        <img className="avatar" src={data.introduction.avatar} alt="avatar" />
+        <img className="avatar" src={this.props.avatar} alt="avatar" />
         <div className="name">
-          <p>{data.introduction.name}</p>
+          <p>{this.props.name}</p>
         </div>
       </header>
     );

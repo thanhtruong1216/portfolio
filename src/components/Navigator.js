@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import { NavLink } from 'react-router-dom';
 import '../styles/Navigator.sass';
 import ScrollLock from './ScrollLock';
+import data from './Data';
 class Navigator extends Component {
   state = {
     showMenuState: false

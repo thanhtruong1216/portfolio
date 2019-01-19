@@ -6,13 +6,14 @@ import Footer from './Contact';
 import Education from './Education';
 import '../App.sass';
 import '../styles/AboutMe.sass';
+import data from './Data'
 class AboutMe extends Component {
   render() {
     return (
       <section className="about-me-container">
         <Navigator />
         <div>
-          <Header />
+          <Header name={data.introduction.name} avatar={data.introduction.avatar}/>
           <Skills />
           <Education />
         </div>

@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import { NavLink } from 'react-router-dom';
 import FontAwesome from 'react-fontawesome';
-import { Widget, addResponseMessage, addLinkSnippet, addUserMessage } from 'react-chat-widget';
+import Header from './components/Header';
 import 'react-chat-widget/lib/styles.css';
 import './App.sass';
 import './styles/Variables.sass';
@@ -25,7 +25,6 @@ class App extends Component {
 
   componentDidMount = () => {
     this.timerID = setInterval(() => this.tick(), 1000);
-    addResponseMessage("Welcome to Thanh's house!");
   }
 
   componentWillUnmount = ()  => {
@@ -38,22 +37,17 @@ class App extends Component {
     });
   }
 
-  handleNewUserMessage = (newMessage) => {
-    console.log(`New message incoming! ${newMessage}`);
-    // Now send the message throught the backend API
-  }
-
-
   render() {
     return (
       <section className="App">
-        <div className="date-time">{this.state.date.toLocaleTimeString()}</div>
+        <Header name="Thanh Truong" avatar={data.introduction.avatar} />
         <div className="navgation-links">
           <NavLink activeClassName="active-nav" to="/home">Home</NavLink>
           <NavLink activeClassName="active-nav" to="/about-me">About me</NavLink>
           <NavLink activeClassName="active-nav" to="/projects">Projects</NavLink>
           <NavLink activeClassName="active-nav" to="/thanh-locations">Thanh's locations</NavLink>
         </div>
+        <div className="date-time">{this.state.date.toLocaleTimeString()}</div>
       </section>
     );
   }
