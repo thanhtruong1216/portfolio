@@ -3,7 +3,7 @@ import '../styles/Projects.sass';
 import '../App.sass';
 import { Link } from 'react-router-dom';
 import data from './Data';
-import Contact from './Contact';
+import Footer from './Footer';
 class Projects extends Component {
   render() {
     return(
@@ -29,7 +29,7 @@ class Projects extends Component {
             ))}
           </div>
         </div>
-        <Contact />
+        <Footer/>
       </section>
     )
   }

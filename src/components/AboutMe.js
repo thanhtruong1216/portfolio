@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import Header from './Header';
 import Skills from './Skills';
-import Footer from './Contact';
+import Footer from './Footer';
 import Education from './Education';
 import '../App.sass';
 import '../styles/AboutMe.sass';

@@ -7,11 +7,11 @@ class Footer extends Component {
   render() {
     return(
       <footer className="footer">
-        <ul className="footer-icons">
+        <ul className="footer__icons">
           {data.contact.map((contacInfo, index) => (
             <li key={index}>
-              <a href={contacInfo.link}>
-                <FontAwesome name={contacInfo.icon} className="icon" />
+              <a className="footer__link" href={contacInfo.link}>
+                <FontAwesome name={contacInfo.icon} className="footer__icon" />
               </a>
             </li>
           ))}
