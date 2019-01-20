@@ -149,7 +149,7 @@ const data = {
       name: 'book tracking app',
       link: 'booktracking',
       urlGitHub: 'https://github.com/thanhtruong1216/booksApp',
-      urlHeroku: '',
+      urlHeroku: 'https://booktrackingofthanh.herokuapp.com/',
       image: bookAppCarousel,
       carouselImage: book,
       skills: ['React', 'ES6', 'Fetch API', 'Babel' ],

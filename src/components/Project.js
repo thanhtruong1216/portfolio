@@ -44,8 +44,9 @@ class Project extends Component {
               <h3>Project goal</h3>
               <p>{project.description.goal}</p>
             </div>
-            {projectLink}
+
           </article>
+          {projectLink}
       </section>
     );
   }
