@@ -1,13 +1,15 @@
 @import 'Variables.sass'
+.skills
+  &__skill-name
+    text-transform: uppercase
+    color: $greyish-brown
+
 @media screen and (max-width: 500px)
   .skills
     display: flex
     flex-direction: column
     align-items: center
     width: 100vw
-    &__skill-name
-      text-transform: uppercase
-      color: $greyish-brown
     h1
       font-size: 18pt
 
@@ -47,7 +49,7 @@
 @media screen and (min-width: 767px)
   .skills
     &__wrapper
-      padding: 10.5pt 21pt
+      padding: 10.5pt 0
       display: flex
       justify-content: space-between
 
