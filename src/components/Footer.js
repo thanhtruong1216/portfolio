@@ -2,7 +2,6 @@ import React, { Component } from 'react';
 import '../styles/Footer.sass';
 import FontAwesome from 'react-fontawesome';
 import data from './Data';
-
 class Footer extends Component {
   render() {
     return(

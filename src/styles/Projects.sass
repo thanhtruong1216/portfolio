@@ -2,6 +2,8 @@
 
 .projects
   @include main-background
+  > div
+    min-height: 100vh
   h1
    position: relative
    top: 50pt
@@ -29,8 +31,6 @@
     display: flex
     flex-wrap: wrap
     justify-content: center
-    min-height: 100vh
-    padding-bottom: 100pt
 
   &__project-name
     text-transform: capitalize

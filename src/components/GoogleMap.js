@@ -99,7 +99,7 @@ class GoogleMap extends Component {
 
   render() {
     return (
-      <section>
+      <section className="page-container">
         <div className="map" id="map">
         </div>
       </section>
