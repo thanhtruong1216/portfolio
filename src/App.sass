@@ -6,7 +6,7 @@
 .App
   min-height: 100vh
   width: 100%
-  font-family: 'Roboto Slab'
+  // font-family: 'Roboto Slab'
   background-size: 100% auto
   background-repeat: no-repeat
   @include main-background
@@ -15,7 +15,7 @@
     min-height: 95vh
     width: 100vw
     a
-      font-family: 'Raleway'
+      // font-family: 'Raleway'
       letter-spacing: 0.2px
 
   .navigator
@@ -42,28 +42,34 @@ a
   padding: 21pt 0
 
 p, h1, h2, h3, li
-  font-family: 'Raleway'
+  // font-family: 'Raleway'
 
 li
   color: $greyish-brown
 
 h1, h2
   white-space: nowrap
+  text-align: center
 
 h1
-  font-size: 25pt
+  font-size: 18pt
   width: 100%
   margin: 0
   color: $greyish-brown
-  padding-top: 31.5pt
   border-bottom: 1px solid $silver
+  padding-top: 31.5pt
 
 h2
   padding: 0
   margin: 0
+  font-size: 13.5pt
 
 h3
   color: $greyish-brown
+  padding: 0 7vw
+
+p
+  font-size: 10.5pt
 
 .see-project-link
   padding: 10.5pt 21pt
@@ -81,20 +87,19 @@ article
 .name p
   color: $greyish-brown
 
-@media screen and (max-width: 767px)
-  .name p
-    font-size: 12pt
-    color: $greyish-brown
+@media screen and (min-width: 767px)
+  h1
+    font-size: 24pt
 
-  .education-container h1
-    font-size: 15pt
-
-
-  h1, h2
-    text-align: center
+  h1, h2, h3
+    text-align: left
 
   h3
-    padding: 0 7vw
+    padding: 0
 
-  .project-details-container h1
-    font-size: 14pt
+  p
+    font-size: 12pt
+
+@media screen and (min-width: 1023px)
+  p
+    font-size: 13.5pt

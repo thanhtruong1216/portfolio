@@ -1,18 +1,18 @@
-import matching from '../images/memory.png';
+import matching from '../images/memoryPicCarousel.png';
 import map from '../images/map.png';
 import book from '../images/book.png';
 import expo from '../images/expoo.jpg';
 import mepic from '../images/mepic.jpg';
 import googleMapPic from '../images/goolemapPic.png';
 import matchingGameCarousel from '../images/memoryPicCarousel.png';
-import readablePhoto from '../images/readablePhoto.png';
+import readablePhoto from '../images/readablePhotoNor.png';
 import readablePhotoNor from '../images/readablePhotoNor.png';
 import bookAppCarousel from '../images/bookAppCarousel.png';
 
 const data = {
   introduction: {
     avatar: mepic,
-    name: 'truong thi ho thanh',
+    name: 'trương thị hồ thanh',
     job: 'frontend web developer',
     language: 'English, Vietnamese',
     icon: 'far fa-user',

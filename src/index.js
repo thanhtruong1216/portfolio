@@ -18,11 +18,11 @@ import Project from './components/Project';
 import Features from './components/Features';
 import WebFont from 'webfontloader';
 
-WebFont.load({
-  google: {
-    families: ['Roboto Slab', 'Raleway']
-  }
-});
+// WebFont.load({
+//   google: {
+//     families: ['Roboto Slab', 'Raleway', 'Lato']
+//   }
+// });
 
 const history = createHistory();
 const middleware = routerMiddleware(history);
