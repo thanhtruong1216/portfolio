@@ -6,10 +6,9 @@
 .App
   min-height: 100vh
   width: 100%
-  // font-family: 'Roboto Slab'
   background-size: 100% auto
   background-repeat: no-repeat
-  @include main-background
+  // @include main-background
   .navgation-links
     padding-top: 0
     min-height: 95vh
@@ -40,9 +39,6 @@ main
 a
   text-decoration: none
   padding: 21pt 0
-
-p, h1, h2, h3, li
-  // font-family: 'Raleway'
 
 li
   color: $greyish-brown
@@ -87,6 +83,10 @@ article
 .name p
   color: $greyish-brown
 
+.page-container
+  min-height: calc(100vh - 300px)
+
+
 @media screen and (min-width: 767px)
   h1
     font-size: 24pt
@@ -100,6 +100,34 @@ article
   p
     font-size: 12pt
 
+  .navigator
+    .button-nav
+      left: 31.5pt
+
 @media screen and (min-width: 1023px)
   p
     font-size: 13.5pt
+
+@media screen and (min-width: 1439px)
+  h1
+    font-size: 36pt
+
+  h3
+    font-size: 24pt
+
+  p
+    font-size: 18pt
+
+
+@media screen and (min-width: 2559px)
+  .page-container
+    max-width: 1500pt
+    margin-left: auto
+    margin-right: auto
+
+  .navigator
+    .button-nav
+      left: 13%
+      top: 5%
+
+

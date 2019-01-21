@@ -6,7 +6,7 @@ import data from './Data';
 class Education extends Component {
   render () {
     return (
-      <section className="education">
+      <section className="education page-container">
         <h1>Educations & Experiences</h1>
         <div className="education__content-wrapper">
           <div className="education__degrees">
@@ -49,7 +49,7 @@ class Education extends Component {
                 </div>
                 <div className="education__flex-box">
                   <div></div>
-                  <p>{experience.company}</p>
+                  <p className="ex-box">{experience.company}</p>
                 </div>
               </div>
             ))}

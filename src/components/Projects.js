@@ -7,7 +7,7 @@ import Footer from './Footer';
 class Projects extends Component {
   render() {
     return(
-      <section className="projects">
+      <section className="projects page-container">
         {/* <Navigator /> */}
         <div>
           <h1>Projects</h1>

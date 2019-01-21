@@ -9,13 +9,12 @@ import data from './Data'
 class AboutMe extends Component {
   render() {
     return (
-      <section className="personal">
+      <section className="personal page-container">
         <div className="personal__main-content">
           <Header name={data.introduction.name} avatar={data.introduction.avatar}/>
           <Skills />
           <Education />
         </div>
-        <Footer/>
       </section>
     );
   }

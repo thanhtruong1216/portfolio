@@ -16,6 +16,7 @@ import AboutMe from './components/AboutMe';
 import Projects from './components/Projects';
 import Project from './components/Project';
 import Features from './components/Features';
+import Footer from './components/Footer';
 import WebFont from 'webfontloader';
 
 // WebFont.load({
@@ -35,7 +36,7 @@ const store = createStore(
 ReactDOM.render(
   <Provider store={store}>
     <ConnectedRouter history={history}>
-      <div>
+      <div className="main">
         <Navigator />
         <Route exact path="/" component={App} />
         <Route exact path="/about-me" component={AboutMe} />
@@ -43,6 +44,7 @@ ReactDOM.render(
         <Route exact path="/projects" component={Projects} />
         <Route path="/projects/:project" component={Project} />
         <Route exact path="/features" component={Features} />
+        <Footer/>
       </div>
     </ConnectedRouter>
   </Provider>,
