@@ -17,13 +17,13 @@
 default: &default
   adapter: postgresql
   encoding: unicode
-  username: thanhthanh
   # For details on connection pooling, see Rails configuration guide
   # http://guides.rubyonrails.org/configuring.html#database-pooling
   pool: <%= ENV.fetch("RAILS_MAX_THREADS") { 5 } %>
 
 development:
   <<: *default
+  username: thanhthanh
   database: portfolioserver_development
 
   # The specified database role being used to connect to postgres.
@@ -58,6 +58,7 @@ development:
 # Do not set this db to the same as development or production.
 test:
   <<: *default
+  username: thanhthanh
   database: portfolioserver_test
 
 # As with config/secrets.yml, you never want to store sensitive information,
@@ -76,10 +77,6 @@ test:
 #
 # You can use this database configuration with:
 #
-#   production:
-#     url: <%= ENV['DATABASE_URL'] %>
-#
 production:
   <<: *default
-  database: portfolioserver_production
-  password: <%= ENV['PORTFOLIOSERVER_DATABASE_PASSWORD'] %>
+  url: <%= ENV['DATABASE_URL'] %>
