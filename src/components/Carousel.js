@@ -62,7 +62,7 @@ class Carousel extends Component {
 
 const CarouselItem = ({url}) => {
   return(
-    <img className="carousel__slide" src={url} />
+    <img className="carousel__slide" src={url} alt="carousel-slide"/>
   )
 }
 
@@ -70,7 +70,7 @@ const Indicator = ({imageUrls, currentImageIndex, goToSlide}) => {
   const indi = imageUrls.map((image, index) => {
     const classes = index === currentImageIndex ? 'carousel__circle carousel__circle-active' : 'carousel__circle';
     return(
-      <img key={index} src={image} className={classes} onClick={() => goToSlide(index)}/>
+      <img key={index} src={image} className={classes} onClick={() => goToSlide(index)} alt="carousel-indicator"/>
     )
   })
   return indi;

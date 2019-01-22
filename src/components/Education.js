@@ -2,7 +2,6 @@ import React, { Component } from 'react';
 import '../styles/Education.sass';
 import '../styles/Experiences.sass'
 import data from './Data';
-
 class Education extends Component {
   render () {
     return (

@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
 import '../styles/Heart.sass';
 import heart from '../images/heart-solid.svg';
-
 class Heart extends Component  {
   constructor() {
     super();

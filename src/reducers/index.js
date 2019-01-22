@@ -1,16 +1,14 @@
 import * as Actions from '../actions';
 
 const initialState = {
-  react: {
-    name: 'React',
-    title: "This is my app"
-  }
+  messages: []
 }
 
 const reducers = (state = initialState, action) => {
-  switch(action.type) {
-    case Actions.LOAD_SINGLE_PROJECT:
-      return {};
+  const { type, ...object } = action;
+  switch(type) {
+    case Actions.ADD_NEW_MESSAGE:
+      return [...state, object];
     default:
       return state;
   }

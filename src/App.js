@@ -1,21 +1,44 @@
 import React, { Component } from 'react';
 import { NavLink } from 'react-router-dom';
-import FontAwesome from 'react-fontawesome';
+import axios from 'axios';
+import { Widget } from 'react-chat-widget';
+import 'react-chat-widget/lib/styles.css';
+import avatar from './images/avatar.jpg';
+//import FontAwesome from 'react-fontawesome';
 import Header from './components/Header';
 import './App.sass';
 import Heart from './components/Heart';
 import './styles/Variables.sass';
 import '../node_modules/font-awesome/css/font-awesome.min.css';
 import data from './components/Data';
-
-const projecrUrls = data.projects.map((project) => {
-  return project.carouselImage
-})
-const links = data.projects.map((project) => {
-  return project.link
-})
-
+import MessageForm from './components/MessageForm';
 class App extends Component {
+
+  addNewList(name) {
+    axios.post('http://localhost:3000/messages/', { message: {name} })
+    .then(response => {
+        console.log(response)
+        const messages = [ ...this.state.messages, response.data ]
+        this.setState({messages})
+    })
+    .catch(error => {
+        console.log(error)
+    })
+  }
+
+  handleNewUserMessage = (content) => {
+    console.log('sss', content)
+    axios.post('http://localhost:3000/messages/', { message: {content} })
+    .then(response => {
+        console.log(response)
+        const messages = [ ...this.state.messages, response.data ]
+        this.setState({messages})
+    })
+    .catch(error => {
+        console.log(error)
+    })
+  }
+
   render() {
     return (
       <section className="App">
@@ -25,6 +48,13 @@ class App extends Component {
           <NavLink activeClassName="active-nav" to="/projects">Projects</NavLink>
           <NavLink activeClassName="active-nav" to="/thanh-locations">Thanh's locations</NavLink>
         </div>
+        <Widget
+          handleNewUserMessage={this.handleNewUserMessage}
+          profileAvatar={avatar}
+          title="Welcome to Thanh's house"
+          subtitle="Leave with a message and contact info">
+          <MessageForm />
+          </Widget>
         <Heart />
       </section>
     );

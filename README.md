@@ -7,4 +7,4 @@
     yarn start
     ```
 
-3. Open project at http://localhost:3000/
+3. Open project at http://localhost:3001/

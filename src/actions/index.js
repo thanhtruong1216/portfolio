@@ -1,6 +1,8 @@
-export const LOAD_SINGLE_PROJECT = 'LOAD_SINGLE_PROJECT';
+export const ADD_NEW_MESSAGE = 'ADD_NEW_MESSAGE';
 
-export const fetchSingleProject = singleProject => ({
-  type: LOAD_SINGLE_PROJECT,
-  singleProject
-})
+export function addNewMessage({ message }) {
+  return {
+  type: ADD_NEW_MESSAGE,
+  ...message
+  }
+}
