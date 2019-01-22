@@ -14,21 +14,24 @@ import data from './components/Data';
 import MessageForm from './components/MessageForm';
 class App extends Component {
 
-  addNewList(name) {
-    axios.post('http://localhost:3000/messages/', { message: {name} })
-    .then(response => {
-        console.log(response)
-        const messages = [ ...this.state.messages, response.data ]
-        this.setState({messages})
-    })
-    .catch(error => {
-        console.log(error)
-    })
-  }
+  // addNewList(name) {
+  //   axios.post('http://localhost:3000/messages/', { message: {name} })
+  //   .then(response => {
+  //       console.log(response)
+  //       const messages = [ ...this.state.messages, response.data ]
+  //       this.setState({messages})
+  //   })
+  //   .catch(error => {
+  //       console.log(error)
+  //   })
+  // }
 
   handleNewUserMessage = (content) => {
+    const config = {
+      headers: {'Access-Control-Allow-Origin': '*'}
+    }
     console.log('sss', content)
-    axios.post('http://localhost:3000/messages/', { message: {content} })
+    axios.post('http://localhost:3000/messages/', { message: {content} }, config)
     .then(response => {
         console.log(response)
         const messages = [ ...this.state.messages, response.data ]
@@ -53,7 +56,6 @@ class App extends Component {
           profileAvatar={avatar}
           title="Welcome to Thanh's house"
           subtitle="Leave with a message and contact info">
-          <MessageForm />
           </Widget>
         <Heart />
       </section>
