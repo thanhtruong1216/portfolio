@@ -29,9 +29,6 @@ class Messages extends Component {
           return(
             <article key={message.id} className="messages__message">
               <p>ID: {message.id}</p>
-              <p>NAME: {message.name}</p>
-              <p>EMAIL: {message.email}</p>
-              <p>PHONE: {message.phone}</p>
               <p>CONTENT: {message.content}</p>
             </article>
           )
