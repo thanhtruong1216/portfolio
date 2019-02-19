@@ -3,8 +3,6 @@ import { NavLink } from 'react-router-dom';
 import axios from 'axios';
 import { Widget } from 'react-chat-widget';
 import 'react-chat-widget/lib/styles.css';
-import avatar from './images/avatar.jpg';
-//import FontAwesome from 'react-fontawesome';
 import Header from './components/Header';
 import './App.sass';
 import Heart from './components/Heart';
