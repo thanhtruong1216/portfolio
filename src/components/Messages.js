@@ -10,16 +10,16 @@ class Messages extends Component {
     }
   }
 
-  componentDidMount() {
-    axios.get('http://localhost:3000/messages.json')
-    .then(response => {
-        console.log("Response", response)
-        this.setState({
-          messages: response.data
-        })
-    })
-    .catch(error => console.log(error))
-  }
+  // componentDidMount() {
+  //   axios.get('http://localhost:3000/messages.json')
+  //   .then(response => {
+  //       console.log("Response", response)
+  //       this.setState({
+  //         messages: response.data
+  //       })
+  //   })
+  //   .catch(error => console.log(error))
+  // }
 
   render() {
     const { messages } = this.state;
