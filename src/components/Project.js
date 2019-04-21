@@ -28,7 +28,7 @@ class Project extends Component {
 
     return(
       <section className="project">
-        <h1>Project {project.name} tracking description</h1>
+        <h1>Project {project.name} description</h1>
           <article>
             <div className="project__description">
               <h3>Overview</h3>
@@ -37,7 +37,7 @@ class Project extends Component {
             <div className="project__description">
               <h3>Technologies</h3>
               <ul>
-              {project.description.technical.map(tech => (<li>{tech}</li>))}
+               {project.description.technical.map(tech => (<li><p>{tech}</p></li>))}
               </ul>
             </div>
             <div className="project__description">
