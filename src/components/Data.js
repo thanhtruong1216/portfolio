@@ -17,7 +17,7 @@ const data = {
     language: 'English, Vietnamese',
     icon: 'far fa-user',
     location: 'Ho Chi Minh City, Viet Nam',
-    desiredRole: 'Frontend Web developer'
+    desiredRole: 'Full Stack Web developer'
   },
   experiences: [
     {
@@ -28,9 +28,15 @@ const data = {
     },
     {
       job: 'Freelancer',
-      year: '2017 til now',
+      year: '2017 - 2019',
       location: 'Ho Chi Minh City, Viet Nam',
       company: ''
+    },
+    {
+      job: 'Full stack developer',
+      year: '2019 - 2021',
+      location: 'Ho Chi Minh City, Viet Nam',
+      company: 'Golden Owl consulting'
     }
   ],
   locations: [
