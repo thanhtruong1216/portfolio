@@ -48,6 +48,7 @@ class App extends Component {
           <NavLink activeClassName="active-nav" to="/about-me">About me</NavLink>
           <NavLink activeClassName="active-nav" to="/projects">Projects</NavLink>
           <NavLink activeClassName="active-nav" to="/thanh-locations">Thanh's locations</NavLink>
+          <NavLink activeClassName="active-nav" to="/interview-questions">Interview Questions</NavLink>
         </div>
         {/* <Widget
           handleNewUserMessage={this.handleNewUserMessage}

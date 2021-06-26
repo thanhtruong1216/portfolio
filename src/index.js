@@ -19,6 +19,8 @@ import Features from './components/Features';
 import Footer from './components/Footer';
 import Messages from './components/Messages';
 import Home from './components/Home';
+import InterviewQuestions from './components/InterviewQuestions';
+
 //import WebFont from 'webfontloader';
 
 // WebFont.load({
@@ -47,6 +49,7 @@ ReactDOM.render(
         <Route path="/projects/:project" component={Project} />
         <Route exact path="/features" component={Features} />
         <Route exact path="/messages" component={Messages} />
+        <Route exact path="/interview-questions" component={InterviewQuestions} />
         <Footer/>
       </div>
     </ConnectedRouter>

@@ -64,6 +64,13 @@ class Navigator extends Component {
             >
               Thanh's locations
             </NavLink>
+            <NavLink
+              onClick={this.toogleMenu}
+              activeClassName="active-nav"
+              to="/interview-questions"
+            >
+              Interview questions
+            </NavLink>
           </div>
         </div>
       );
