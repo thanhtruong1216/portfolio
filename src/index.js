@@ -18,6 +18,7 @@ import Project from './components/Project';
 import Features from './components/Features';
 import Footer from './components/Footer';
 import Messages from './components/Messages';
+import Home from './components/Home';
 //import WebFont from 'webfontloader';
 
 // WebFont.load({
@@ -39,7 +40,7 @@ ReactDOM.render(
     <ConnectedRouter history={history}>
       <div className="main">
         <Navigator />
-        <Route exact path="/" component={App} />
+        <Route exact path="/" component={Home} />
         <Route exact path="/about-me" component={AboutMe} />
         <Route exact path="/thanh-locations" component={GoogleMap} />
         <Route exact path="/projects" component={Projects} />
