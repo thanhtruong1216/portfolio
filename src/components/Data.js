@@ -46,7 +46,7 @@ const data = {
     },
     {
       id: 2,
-      title: 'I live here currently',
+      title: 'I lived here for 3 years',
       image: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQWdxwl7wcQZoboWYr-u4O_xKry6ajsSX_T0Fk6Esh6YCwhMCI5',
       address: 'Nguyen Huu Tho Street, District 7, Ho Chi Minh City',
       location: {
@@ -54,16 +54,36 @@ const data = {
         lng: 106.672211
       }
     },
-      {
-        id: 3,
-        title: 'I worked here for three years(2013-2016)',
-        image: 'http://kgtv.vn/wp-content/uploads/2015/07/dai-ptva-th-ghep-may-2015.jpg',
-        address: '39 Dong Da Street, District Vinh Lac, Rach Gia City',
-        location: {
-          lat: 9.994949,
-          lng: 105.095413
-        }
-      },
+    {
+      id: 3,
+      title: 'I worked here for three years(2013-2016)',
+      image: 'http://kgtv.vn/wp-content/uploads/2015/07/dai-ptva-th-ghep-may-2015.jpg',
+      address: '39 Dong Da Street, Vinh Lac Ward, Rach Gia City',
+      location: {
+        lat: 9.994949,
+        lng: 105.095413
+      }
+    },
+    {
+      id: 4,
+      title: 'I live here currently',
+      image: 'https://novaworldvietnam.com.vn/wp-content/uploads/2019/10/sunrise-riverside-nha-be.jpg',
+      address: 'Sunrise Riverside Apartment, Nguyen Huu Tho Street, Nha Be District, HCMC',
+      location: {
+        lat: 10.723137,
+        lng: 106.705771
+      }
+    },
+    {
+      id: 5,
+      title: 'I worked here for two years(2019-2021)',
+      image: 'https://img.dothi.net//resize/640x380/2015/06/25/20150625083030-83b2.jpg',
+      address: '538, Cach Mang Thang 8 Street, District 3, HCMC',
+      location: {
+        lat: 10.786123,
+        lng: 106.667412
+      }
+    },
   ],
   skills: [
     {
