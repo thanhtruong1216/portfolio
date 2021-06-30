@@ -5,7 +5,7 @@ import data from '../data/Introduce'
 class Education extends Component {
   render() {
     return (
-      <section className="education page-container">
+      <section className="education">
         <h1>Educations & Experiences</h1>
         <div className="education__content-wrapper">
           <div className="education__degrees">
