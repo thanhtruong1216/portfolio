@@ -5,7 +5,6 @@ import Header from './components/Header'
 import './App.sass'
 import Heart from './components/Heart'
 import './styles/Variables.sass'
-import '../node_modules/font-awesome/css/font-awesome.min.css'
 import data from './data/Introduce'
 class App extends Component {
   render() {
