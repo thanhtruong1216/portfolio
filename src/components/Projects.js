@@ -1,12 +1,12 @@
-import React, { Component } from 'react';
-import '../styles/Projects.sass';
-import '../App.sass';
-import { Link } from 'react-router-dom';
-import data from './Data';
+import React, { Component } from 'react'
+import '../styles/Projects.sass'
+import '../App.sass'
+import { Link } from 'react-router-dom'
+import data from '../data/Introduce'
 
 class Projects extends Component {
   render() {
-    return(
+    return (
       <section className="projects page-container">
         {/* <Navigator /> */}
         <div>
@@ -16,11 +16,13 @@ class Projects extends Component {
               <Link key={project.id} className="projects__project" to={`/projects/${project.link}`}>
                 <h2 className="projects__project-name">{project.name}</h2>
                 <div className="projects__overview-wrapper">
-                <ul className="projects__project-overview" style={project.styles}>
+                  <ul className="projects__project-overview" style={project.styles}>
                     {project.skills.map((skill, key) => {
                       return (
-                        <li className="projects__project-skill" key={key}>{skill}</li>
-                      );
+                        <li className="projects__project-skill" key={key}>
+                          {skill}
+                        </li>
+                      )
                     })}
                   </ul>
                   <img src={project.image} className="projects__project-image" alt="project" />
@@ -34,4 +36,4 @@ class Projects extends Component {
   }
 }
 
-export default Projects;
+export default Projects

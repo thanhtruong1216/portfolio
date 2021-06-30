@@ -1,16 +1,16 @@
-import React, { Component } from 'react';
-import '../styles/Education.sass';
+import React, { Component } from 'react'
+import '../styles/Education.sass'
 import '../styles/Experiences.sass'
-import data from './Data';
+import data from '../data/Introduce'
 class Education extends Component {
-  render () {
+  render() {
     return (
       <section className="education page-container">
         <h1>Educations & Experiences</h1>
         <div className="education__content-wrapper">
           <div className="education__degrees">
             <h3>Degree</h3>
-            {data.education.school.map((school,key) => (
+            {data.education.school.map((school, key) => (
               <div className="education__degree" key={key}>
                 <div className="education__flex-box">
                   <p>{school.degree}</p>
@@ -18,21 +18,23 @@ class Education extends Component {
                 </div>
                 <div className="education__flex-box">
                   <p>{school.school}</p>
-                  <div></div>
+                  <div />
                 </div>
               </div>
             ))}
           </div>
           <div className="education__certificates">
             <h3>Certificate(Online course)</h3>
-            {data.education.certificate.map((school,key) => (
+            {data.education.certificate.map((school, key) => (
               <div className="education__certificate" key={key}>
                 <div className="education__flex-box">
                   <p>{school.certificate}</p>
                   <p>{school.year}</p>
                 </div>
                 <div className="education__flex-box">
-                  <p><a href={school.link}>See certificate</a></p>
+                  <p>
+                    <a href={school.link}>See certificate</a>
+                  </p>
                   <p>{school.school}</p>
                 </div>
               </div>
@@ -47,16 +49,16 @@ class Education extends Component {
                   <p>{experience.year}</p>
                 </div>
                 <div className="education__flex-box">
-                  <div></div>
+                  <div />
                   <p className="ex-box">{experience.company}</p>
                 </div>
               </div>
             ))}
           </div>
-      </div>
-    </section>
-    );
+        </div>
+      </section>
+    )
   }
 }
 
-export default Education;
+export default Education

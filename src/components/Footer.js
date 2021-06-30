@@ -1,10 +1,10 @@
-import React, { Component } from 'react';
-import '../styles/Footer.sass';
-import FontAwesome from 'react-fontawesome';
-import data from './Data';
+import React, { Component } from 'react'
+import '../styles/Footer.sass'
+import FontAwesome from 'react-fontawesome'
+import data from '../data/Introduce'
 class Footer extends Component {
   render() {
-    return(
+    return (
       <footer className="footer">
         <ul className="footer__icons">
           {data.contact.map((contacInfo, index) => (
@@ -16,8 +16,8 @@ class Footer extends Component {
           ))}
         </ul>
       </footer>
-    );
+    )
   }
 }
 
-export default Footer;
+export default Footer
