@@ -15,7 +15,7 @@ const Quotes = () => {
         <Row gutter={[{ xs: 8, sm: 16, md: 24, lg: 32 }, 20]}>
           {quotesArrayShuffle.map(quote => (
             <Col sm={24} xs={24} md={12} lg={8}>
-              <Card title={quote.book ? `${quote.book} ${quote.book} - ${quote.author}` : quote.author}>
+              <Card title={quote.book ? `${quote.book} - ${quote.author}` : quote.author}>
                 {quote.content.map((q, index) => {
                   if (index < limit) {
                     return (
