@@ -24,6 +24,9 @@ class App extends Component {
           <NavLink activeClassName="active-nav" to="/interview-questions">
             Interview Questions
           </NavLink>
+          <NavLink activeClassName="active-nav" to="/quotes">
+            Quotes
+          </NavLink>
         </div>
         <Heart />
       </section>

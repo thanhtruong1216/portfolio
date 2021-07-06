@@ -16,6 +16,7 @@ import Project from './components/Project'
 import Footer from './components/Footer'
 import Home from './components/Home'
 import InterviewQuestions from './components/InterviewQuestions'
+import Quotes from './components/Quotes'
 
 const history = createHistory()
 const middleware = routerMiddleware(history)
@@ -36,6 +37,7 @@ ReactDOM.render(
         <Route exact path="/projects" component={Projects} />
         <Route path="/projects/:project" component={Project} />
         <Route exact path="/interview-questions" component={InterviewQuestions} />
+        <Route exact path="/quotes" component={Quotes} />
         <Footer />
       </div>
     </ConnectedRouter>
