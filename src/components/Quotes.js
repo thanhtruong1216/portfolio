@@ -3,14 +3,7 @@ import data from '../data/quotes'
 import { Row, Col, Card } from 'antd'
 import { HeartOutlined } from '@ant-design/icons'
 import 'antd/dist/antd.css'
-
-const shuffle = array => {
-  for (let i = array.length - 1; i > 0; i--) {
-    const j = Math.floor(Math.random() * (i + 1))
-    ;[array[i], array[j]] = [array[j], array[i]]
-  }
-  return array
-}
+import shuffle from '../utils/functions/shuffle'
 
 const quotesArrayShuffle = shuffle(data)
 const limit = 2

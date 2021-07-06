@@ -241,6 +241,13 @@ const quotes = [
     author: 'Dịch Phấn Hàn',
     content: [
       'Cũng bắt đầu từ ngày hôm đó, ánh mắt của tôi không còn dịu dàng nữa, không còn ngây thơ nữa, không còn trong sáng nữa. Ánh mắt của tôi đã vĩnh viễn từ biệt thời thiếu nữ. Ánh mắt của tôi đã học đươc cách biết hoài nghi, biết lạnh lùng, biết mưu sát. Ánh mắt của tôi hiểu được sự lạnh lẽo, hiểu được sự lừa dối và hiểu được những thứ bẩn thỉu.',
+    ],
+  },
+  {
+    id: 91,
+    book: 'Cô đơn vào đời',
+    author: 'Dịch Phấn Hàn',
+    content: [
       'Sẽ luôn có một người phải nhận thua cuộc, sẽ luôn có một người yêu người còn lại nhiều hơn một chút mới có thể đọ sức được với nhau. Tình yêu là một cuộc đọ sức vô hình. Mà những người như chúng ta chỉ nhìn thấy được những sự ấm áp và ngọt ngào.',
     ],
   },
@@ -304,18 +311,22 @@ const quotes = [
     author: 'Diệp Lạc Vô Tâm',
     content: [
       'Anh tuy có chút hư hỏng, nhưng bản tính lương thiện. Mặt mũi tuy không ưa nhìn, nhưng nội tâm phong phú. Dù sao em cũng chưa có bạn trai, vậy tạm chấp nhận anh đi.',
-      'Yêu chính là: xoay người, để nước mắt rơi xuống trong đêm tối nơi em không nhìn thấy. Còn dưới ánh mặt trời, em nhìn thấy, là nụ cười hăng hái của anh.',
-      'Cùng em ăn cơm, cùng em ngủ, cùng em cười, cùng em dạo phố, mở mắt có thể thấy, nhắm mắt có thể ôm...là khát vọng lớn nhất trong cuộc sống của anh.',
     ],
   },
   {
-    id: 20,
-    book: 'Ngủ cùng sói',
+    id: 89,
+    book: 'Nụ hôn của sói',
     author: 'Diệp Lạc Vô Tâm',
     content: [
-      'Sau bao sóng gió, sau bao thăng trầm, tôi chỉ còn một giấc mộng duy nhất, là em.',
-      'Tôi có thể cho em thời gian tiếp nhận tình cảm của tôi đối với em, bao lâu cũng được, vì em là của tôi.',
-      'Bởi vì yêu em không có gì sai cả. Theo đuổi em là tự do của anh. Ngoài em ra, không ai có tư cách nói: không được.',
+      'Yêu chính là: xoay người, để nước mắt rơi xuống trong đêm tối nơi em không nhìn thấy. Còn dưới ánh mặt trời, em nhìn thấy, là nụ cười hăng hái của anh.',
+    ],
+  },
+  {
+    id: 90,
+    book: 'Nụ hôn của sói',
+    author: 'Diệp Lạc Vô Tâm',
+    content: [
+      'Cùng em ăn cơm, cùng em ngủ, cùng em cười, cùng em dạo phố, mở mắt có thể thấy, nhắm mắt có thể ôm...là khát vọng lớn nhất trong cuộc sống của anh.',
     ],
   },
   {
@@ -374,8 +385,15 @@ const quotes = [
     book: 'Nếu Không Là Tình Yêu',
     author: 'Diệp Lạc Vô Tâm',
     content: [
-      'Ngoài em ra, tất cả những thứ khác đối với anh đều không quan trọng. Dù một ngày nào đó anh trắng tay, chỉ cần có em bên cạnh anh là đủ. ',
       'Nếu anh thật lòng yêu một người con gái, anh sẽ không bao giờ để cô ấy đi, càng không có chuyện cưới người con gái khác, bất kể vì lí do gì?',
+    ],
+  },
+  {
+    id: 87,
+    book: 'Nếu Không Là Tình Yêu',
+    author: 'Diệp Lạc Vô Tâm',
+    content: [
+      'Ngoài em ra, tất cả những thứ khác đối với anh đều không quan trọng. Dù một ngày nào đó anh trắng tay, chỉ cần có em bên cạnh anh là đủ. ',
     ],
   },
   {
@@ -383,18 +401,6 @@ const quotes = [
     book: 'Hôn Trộm 55 Lần',
     author: 'Diệp Phi Dạ',
     content: ['Em biết không? Chỉ một nụ cười lơ đãng của em liền khiến cho thế giới của tôi trở nên ấm áp.'],
-  },
-  {
-    id: 26,
-    book: 'Tôi là Bêto',
-    author: 'Nguyễn Nhật Ánh',
-    content: [
-      'Con người ta có thể sống bằng nhiều cách Và cũng có thể chết bằng nhiều cách Có những người chết ngay lúc còn đang sống. Tôi không thấy có lý do gì để nghĩ đến lão dù là nghĩ đến để căm giận hay ghét bỏ. Nếu ai đó còn xứng đáng để bạn nuôi nấng sự căm ghét, người đó vẫn còn giá trị trong mắt bạn. Nói cách khác, lão đã trượt khỏi cuộc sống của tôi.',
-      'Khi bạn không làm được điều bạn muốn làm, có lẽ bạn cũng cảm thấy tự do bị tước đoạt.',
-      'Càng lớn tuổi, con người ta càng nói ít đi. Họ nghĩ nhiều hơn.',
-      'Khi bạn quá tin cậy hoặc sùng bái một ai, chắc chắn bạn không bao giờ đề phòng, thậm chí nghi ngờ. Và đôi khi bạn chết vì niềm tin ngây thơ của mình.',
-      'Khóc, đôi khi là một kiểu cười. Và ngược lại.',
-    ],
   },
   {
     id: 55,
@@ -440,21 +446,25 @@ const quotes = [
   },
   {
     id: 60,
+    book: '',
     author: 'Nelson Mandela',
     content: ['Người chiến thắng là người biết ước mơ và không bao giờ bỏ cuộc'],
   },
   {
     id: 71,
+    book: '',
     author: 'Nelson Mandela',
     content: ['Dẫn đầu từ phía sau, và để cho những người khác tin rằng họ đang dẫn đầu.'],
   },
   {
     id: 72,
+    book: '',
     author: 'Nelson Mandela',
     content: ['Mọi việc đều tưởng chừng như bất khả thi cho đến khi nó được hoàn thành'],
   },
   {
     id: 73,
+    book: '',
     author: 'Nelson Mandela',
     content: [
       'Tôi đã học hỏi được rằng sự dũng cảm không thể không đi kèm nỗi sợ hãi, nhưng sự chiến thắng sẽ vượt qua điều đó. Một chiến binh can đảm không phải là người không cảm thấy sợ hãi, mà đó là người có thể chinh phục được nỗi sợ đó.',
@@ -462,6 +472,7 @@ const quotes = [
   },
   {
     id: 74,
+    book: '',
     author: 'Nelson Mandela',
     content: [
       'Không ai sinh ra đã có lòng thù hằn với người khác bởi màu da, địa vị hoặc tôn giáo. Điều đó được hình thành qua giáo dục, và nếu họ có thể học thù ghét, thì họ cũng có thể học yêu thương. Tình yêu thì luôn tìm đến trái tim một cách tự nhiên hơn là thù hận.',
@@ -469,16 +480,19 @@ const quotes = [
   },
   {
     id: 75,
+    book: '',
     author: 'Nelson Mandela',
     content: ['Sự oán giận giống như tự mình uống thuốc độc mà hy vọng kẻ thù của mình chết vậy.'],
   },
   {
     id: 76,
+    book: '',
     author: 'Nelson Mandela',
     content: ['Một cái đầu thông minh và một trái tim ấm áp luôn là một sự kết hợp có sức mạnh kinh hoàng.'],
   },
   {
     id: 61,
+    book: '',
     author: 'Yasser Arafat',
     content: [
       'Tôi đến đây mang theo cành ô-liu của hòa bình và khẩu súng của người chiến sỹ đấu tranh vì tự do. Xin đừng để cành ô-liu rơi khỏi tay tôi',
@@ -486,21 +500,25 @@ const quotes = [
   },
   {
     id: 62,
+    book: '',
     author: 'Adolf Hitler',
     content: ['Khi bạn nói dối đủ lớn và đủ nhiều thì đó là sự thật.'],
   },
   {
     id: 66,
+    book: '',
     author: 'Adolf Hitler',
     content: ['Thành công là thẩm phán trần thế duy nhất của sự đúng sai.'],
   },
   {
     id: 67,
+    book: '',
     author: 'Adolf Hitler',
     content: ['Tôi chỉ chiến đấu vì cái tôi yêu, chỉ yêu những gì tôi tôn trọng, và chỉ tôn trọng những gì tôi biết.'],
   },
   {
     id: 68,
+    book: '',
     author: 'Adolf Hitler',
     content: [
       'Khi ngươi giành chiến thắng, ngươi không cần giải thích! Nếu ngươi thua, người không nên có mặt ở đây để giải trình!',
@@ -508,6 +526,7 @@ const quotes = [
   },
   {
     id: 69,
+    book: '',
     author: 'Adolf Hitler',
     content: [
       'Hãy suy nghĩ 1000 lần trước khi quyết định. Sau khi quyết định, không bao giờ quay lại ngay cả khi gặp 1000 khó khăn',
@@ -515,25 +534,125 @@ const quotes = [
   },
   {
     id: 70,
+    book: '',
     author: 'Adolf Hitler',
     content: ['Đừng so sánh mình với người khác. Nếu làm như vậy, ngươi đang xúc phạm chính mình.'],
   },
   {
     id: 63,
+    book: '',
     author: 'Fidel Castro',
     content: ['Nếu xuất phát tôi sẽ đến đích, nếu đến đích, tôi sẽ chiến đâu, nếu chiến đấu tôi sẽ chiến thắng'],
   },
   {
     id: 64,
+    book: '',
     author: 'Fidel Castro',
     content: ['Cách mạng không phải là giường trải hoa hồng. Cách mạng là đấu tranh giữa tương lai và quá khứ'],
   },
   {
     id: 65,
+    book: '',
     author: 'Fidel Castro',
     content: [
       'Tôi thực sự hạnh phúc khi sống tới tuổi 80. Tôi chưa bao giờ mong vậy, nhất là khi có một anh hàng xóm, một cường quốc lớn nhất thế giới tìm cách giết tôi hàng ngày',
     ],
+  },
+  {
+    id: 77,
+    book: '',
+    author: 'Bao la vùng trời - Phần 2',
+    content: [
+      'Để anh dạy cho em một đạo lý đơn giản... Tình yêu thật ra giống như là tuyết vậy, rất là đẹp nhưng mà tan chảy rất nhanh. Nhưng tình bạn thì lại khác. Tình bạn giống như là đất, nó có thể khiến cho cây non trưởng thành, cho đến một ngày lớn biến thành một khu rùng, trải qua mấy trăm năm, mấy nghìn năm cũng không sụp đổ được. ( Cố Hạ Dương - tập 23)',
+    ],
+  },
+  {
+    id: 78,
+    book: '',
+    author: 'Hạnh phúc trở về',
+    content: [
+      'Bởi vì anh yêu em, anh yêu em. Anh không muốn nhìn em bị ấm ức, càng không muốn em rõ ràng thích anh mà cố gắng che đậy. Em đừng dày vò mình nữa được không? (Hàn Minh - Tập 11)',
+    ],
+  },
+  {
+    id: 79,
+    author: 'Bác sĩ khoa sản',
+    content: [
+      'Cuộc sống vốn dĩ có nhiều bất ngờ và bất trắc không ai ngờ tới. Chúng tôi không đoán trước được kết quả, cũng không thấy trước được tương lai. Vậy hãy để chúng tôi lắng nghe hiện tại vì sự thật sẽ tồn tại mãi và chúng ta đành phải kiên nhẫn chờ đợi. (Diệp Tử - Tập 4)',
+    ],
+  },
+  {
+    id: 80,
+    book: '',
+    author: 'Nấc thang cuộc đời',
+    content: [
+      'Họ biết hay không không quan trọng. Tóm lại tôi cứu họ là vì khâm phục tình anh em của họ. Năm trăm đồng đại dương cứu sống hai mạng người, xứng đáng mà. Có những chuyện không thể nói ra miệng được, có những chuyện đáng nói cũng không nên nói ra, nói tóm lại là chuyện mình làm cũng không cần ai biết (Vinh Hạo Đông - Tập 4)',
+    ],
+  },
+  {
+    id: 81,
+    book: '',
+    author: 'Crash Landing on You',
+    content: [
+      'Anh nghĩ sai rồi, cho dù có phải chết vẫn có người khóc thương cho anh...Biết người đó là em khiến anh đau lòng nhưng mãn nguyện (Tập 15)',
+      'Vì anh biết rồi, nên em đừng khóc',
+    ],
+  },
+  {
+    id: 82,
+    book: '',
+    author: 'Crash Landing on You',
+    content: ['Vì anh biết rồi, nên em đừng khóc'],
+  },
+  {
+    id: 82,
+    book: '',
+    author: 'So Young',
+    content: [
+      'Cuộc đời anh là toà nhà chỉ được xây một lần.  Anh buộc phải để nó chính xác tuyệt đối, không được sai một centimet nào cả. (Trần Hiếu Chính)',
+    ],
+  },
+  {
+    id: 83,
+    book: '',
+    author: 'Cẩm y chi hạ',
+    content: [
+      'Kim Hạ chính là điểm yếu của ta, cũng là khôi giáp của ta. Ta có thể vì nàng ấy mà cúi đầu nhưng cũng có thể vì nàng ấy ta lại càng có thêm được sức mạnh để tranh đấu (Lục Dịch - Tập 52)',
+    ],
+  },
+  {
+    id: 84,
+    book: '',
+    author: 'Cha tôi là người quản rừng',
+    content: [
+      'Không có bậc cha mẹ nào là hoàn hảo đâu, đôi khi tôi cũng phạm phải sai lầm. Nhiều khi tôi để cơn giận lấn áp chính bản thân, để thằng bé khóc sưng cả hai mắt. Trong những lúc tôi mất phương hướng, tôi thường ôm lấy thằng bé, nói rằng tôi xin lỗi. Chắc nó biết tôi quan tâm đến nó lắm. Đó là cách bố mẹ và con cái cùng trưởng thành đấy. Tình thân là thế đấy.',
+    ],
+  },
+  {
+    id: 85,
+    book: '',
+    author: 'Cha tôi là người quản rừng',
+    content: [
+      'Sự bình phục của nhóc mới là điều quan trọng đối với ta. Ta có thể làm để kiếm thêm tiền, nhưng không gì có thể thay thế được nhóc đâu, Somali',
+    ],
+  },
+  {
+    id: 86,
+    book: '',
+    author: 'Cha tôi là người quản rừng',
+    content: ['Những lời  nói dối vô tâm làm cho mọi ký ức hạnh phúc đều tan vỡ (Golem - Tập 4)'],
+  },
+  {
+    id: 85,
+    book: '',
+    author: 'Assassins Pride',
+    content: ['Kẻ thù của ngươi cầm vũ khí không có nghĩa là sử dụng nó (Melida Angel - Tập 2)'],
+  },
+  {
+    id: 87,
+    book: '',
+    author: 'Assassins Pride',
+    content: ['Kẻ thù của ngươi cầm vũ khí không có nghĩa là sử dụng nó (Melida Angel - Tập 2)'],
   },
 ]
 
